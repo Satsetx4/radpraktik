@@ -1,4 +1,4 @@
-import { BarChart3, BookOpen, Crosshair, Home, Info, Stethoscope, User } from 'lucide-react';
+import { BarChart3, BookOpen, Crosshair, ExternalLink, FolderKanban, Home, Info, Stethoscope, User } from 'lucide-react';
 import { motion, useReducedMotion } from 'motion/react';
 import { NavLink } from 'react-router-dom';
 import { getTransition } from '../lib/motion';
@@ -117,7 +117,7 @@ export function MobileBottomNav({ onEditName }: MobileBottomNavProps) {
           </nav>
         </div>
 
-        <div className="space-y-3 border-t border-[var(--border-subtle)] pt-4">
+        <div className="space-y-2.5 border-t border-[var(--border-subtle)] pt-4">
           <button
             type="button"
             onClick={onEditName}
@@ -147,6 +147,31 @@ export function MobileBottomNav({ onEditName }: MobileBottomNavProps) {
             <Info className="h-4 w-4 shrink-0" aria-hidden="true" />
             <span>Tentang &amp; Sumber</span>
           </NavLink>
+
+          <div className="space-y-1 border-t border-[var(--border-subtle)] pt-2.5">
+            <a
+              href="https://rindia.my.id"
+              className="flex min-h-[44px] items-center justify-between gap-2 rounded-xl px-3 py-2 text-sm text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-muted)] hover:text-[var(--accent-primary)]"
+            >
+              <span className="flex min-w-0 items-center gap-3">
+                <FolderKanban className="h-4 w-4 shrink-0 text-[var(--accent-primary)]" aria-hidden="true" />
+                <span className="truncate">Meja Tugas Rindia</span>
+              </span>
+              <ExternalLink className="h-3.5 w-3.5 shrink-0 opacity-60" aria-hidden="true" />
+            </a>
+            <a
+              href="https://anfis.rindia.my.id"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex min-h-[44px] items-center justify-between gap-2 rounded-xl px-3 py-2 text-sm text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-muted)] hover:text-[var(--accent-primary)]"
+            >
+              <span className="flex min-w-0 items-center gap-3">
+                <FolderKanban className="h-4 w-4 shrink-0 text-[var(--accent-secondary)]" aria-hidden="true" />
+                <span className="truncate">AnFis — Anatomi Fisiologi</span>
+              </span>
+              <ExternalLink className="h-3.5 w-3.5 shrink-0 opacity-60" aria-hidden="true" />
+            </a>
+          </div>
         </div>
       </aside>
     </>

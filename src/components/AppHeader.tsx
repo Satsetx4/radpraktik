@@ -1,4 +1,4 @@
-import { ArrowLeft, Crosshair } from 'lucide-react';
+import { ArrowLeft, Crosshair, LayoutGrid } from 'lucide-react';
 import { motion, useReducedMotion } from 'motion/react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Breadcrumbs, type BreadcrumbItem } from './Breadcrumbs';
@@ -68,6 +68,15 @@ export function AppHeader({
         </div>
 
         <div className="flex shrink-0 items-center gap-2">
+          <a
+            href="https://rindia.my.id"
+            title="Kembali ke Meja Tugas Rindia (rindia.my.id)"
+            aria-label="Kembali ke Meja Tugas Rindia"
+            className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center gap-1.5 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-3 text-xs font-medium text-[var(--text-secondary)] transition-colors hover:border-[var(--border-strong)] hover:text-[var(--accent-primary)]"
+          >
+            <LayoutGrid className="h-4 w-4 text-[var(--accent-primary)]" aria-hidden="true" />
+            <span className="hidden sm:inline">Meja Rindia</span>
+          </a>
           <ThemeToggle />
         </div>
       </div>

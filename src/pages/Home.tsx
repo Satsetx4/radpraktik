@@ -284,11 +284,31 @@ export function Home({ onOpenOnboarding }: HomeProps) {
           <p>
             Sumber materi: Modul Praktek Lab Teknik Radiografi 1 — JTRR Poltekkes Kemenkes Semarang.
           </p>
-          <div className="flex items-center gap-4">
-            <Link to="/tentang" className="hover:text-[var(--accent-primary)] hover:underline">
+          <div className="flex flex-wrap items-center gap-4">
+            <a
+              href="https://rindia.my.id"
+              className="inline-flex min-h-[44px] items-center hover:text-[var(--accent-primary)] hover:underline"
+            >
+              Meja Rindia
+            </a>
+            <a
+              href="https://anfis.rindia.my.id"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-[44px] items-center hover:text-[var(--accent-primary)] hover:underline"
+            >
+              AnFis
+            </a>
+            <Link
+              to="/tentang"
+              className="inline-flex min-h-[44px] items-center hover:text-[var(--accent-primary)] hover:underline"
+            >
               Tentang
             </Link>
-            <Link to="/progres" className="hover:text-[var(--accent-primary)] hover:underline">
+            <Link
+              to="/progres"
+              className="inline-flex min-h-[44px] items-center hover:text-[var(--accent-primary)] hover:underline"
+            >
               Reset Data
             </Link>
           </div>

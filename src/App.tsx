@@ -28,14 +28,26 @@ function ScrollToTop() {
 
 function AppShell() {
   const { progress, setNama } = useProgress();
+  const location = useLocation();
   const [onboardingOpen, setOnboardingOpen] = useState(false);
   const [dismissedInitial, setDismissedInitial] = useState(false);
 
   useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const isFromDesk =
+      params.get('from') === 'desk' || params.get('user')?.toLowerCase() === 'rindia';
+
+    if (isFromDesk && !progress.nama) {
+      setNama('Rindia');
+      setDismissedInitial(true);
+      setOnboardingOpen(false);
+      return;
+    }
+
     if (!progress.nama && !dismissedInitial) {
       setOnboardingOpen(true);
     }
-  }, [progress.nama, dismissedInitial]);
+  }, [location.search, progress.nama, dismissedInitial, setNama]);
 
   const handleCloseOnboarding = () => {
     setOnboardingOpen(false);

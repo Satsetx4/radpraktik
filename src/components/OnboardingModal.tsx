@@ -1,4 +1,4 @@
-import { UserCheck, X } from 'lucide-react';
+import { Sparkles, UserCheck, X } from 'lucide-react';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { useEffect, useState, type FormEvent } from 'react';
 import { getTransition, TAP_FEEDBACK } from '../lib/motion';
@@ -125,6 +125,21 @@ export function OnboardingModal({
                     {error}
                   </p>
                 )}
+                <div className="mt-2.5">
+                  <motion.button
+                    type="button"
+                    whileTap={reduced ? undefined : TAP_FEEDBACK}
+                    onClick={() => {
+                      setError('');
+                      setNama('Rindia');
+                      onSave('Rindia');
+                    }}
+                    className="inline-flex min-h-[44px] items-center gap-1.5 rounded-full border border-[var(--border-strong)] bg-[var(--bg-elevated)] px-3.5 text-xs font-medium text-[var(--text-primary)] transition-colors hover:border-[var(--accent-primary)] hover:text-[var(--accent-primary)]"
+                  >
+                    <Sparkles className="h-3.5 w-3.5 text-[var(--accent-primary)]" aria-hidden="true" />
+                    <span>Pakai nama cepat: Rindia</span>
+                  </motion.button>
+                </div>
               </div>
 
               <div className="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
