@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id" class="dark" data-theme="dark">
+<html lang="id" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,7 @@
     />
     <meta name="robots" content="index, follow" />
     <meta name="google-site-verification" content="" />
-    <meta name="theme-color" content="#0B0F14" />
+    <meta name="theme-color" content="#00A572" />
 
     <link rel="canonical" href="https://radpraktik.rindia.my.id/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -47,7 +47,7 @@
     <!-- Anti-FOUC Theme Boot Script -->
     <script>
       (function () {
-        var tema = 'dark';
+        var tema = 'light';
         try {
           var saved = localStorage.getItem('radpraktik:v1:tema');
           if (saved === 'light' || saved === 'dark') {
@@ -62,7 +62,7 @@
             }
           }
         } catch (e) {
-          tema = 'dark';
+          tema = 'light';
         }
         var root = document.documentElement;
         root.dataset.theme = tema;
@@ -73,7 +73,7 @@
         }
         var metaTheme = document.querySelector('meta[name="theme-color"]');
         if (metaTheme) {
-          metaTheme.setAttribute('content', tema === 'dark' ? '#0B0F14' : '#F6F7F4');
+          metaTheme.setAttribute('content', tema === 'dark' ? '#08120F' : '#00A572');
         }
       })();
     </script>

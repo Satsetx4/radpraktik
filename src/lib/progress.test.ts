@@ -33,7 +33,7 @@ describe('progress state & persistence', () => {
     const safe = makeMemoryStorage();
     const state = loadProgress(safe);
     expect(state.nama).toBe('');
-    expect(state.tema).toBe('dark');
+    expect(state.tema).toBe('light');
     expect(state.modul).toEqual({});
     expect(state.kasus).toEqual({});
     expect(state.modulTerakhir).toBeNull();
@@ -58,7 +58,7 @@ describe('progress state & persistence', () => {
 
   it('menyimpan skor kasus terbaik dan mereset seluruh progres ke 0%', () => {
     const safe = makeMemoryStorage();
-    let state = createDefaultProgress('light');
+    let state = createDefaultProgress('dark');
     state.nama = 'Rina';
     state = applyQuizCompletion(state, 'manus', 80);
     state = applyCaseResult(state, 'k01', 100);
@@ -68,12 +68,12 @@ describe('progress state & persistence', () => {
     saveProgress(state, safe);
     const loaded = loadProgress(safe);
     expect(loaded.nama).toBe('Rina');
-    expect(loaded.tema).toBe('light');
+    expect(loaded.tema).toBe('dark');
 
     const reset = resetProgressStorage(safe);
     expect(reset.nama).toBe('');
     expect(reset.modul).toEqual({});
     expect(reset.kasus).toEqual({});
-    expect(loadProgress(safe)).toEqual(createDefaultProgress('dark'));
+    expect(loadProgress(safe)).toEqual(createDefaultProgress('light'));
   });
 });

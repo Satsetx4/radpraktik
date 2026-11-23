@@ -33,7 +33,7 @@ export interface ProgressState {
 export const PROGRESS_STORAGE_KEY = 'progress';
 export const THEME_STORAGE_KEY = 'tema';
 
-export function createDefaultProgress(tema: ThemeMode = 'dark'): ProgressState {
+export function createDefaultProgress(tema: ThemeMode = 'light'): ProgressState {
   return {
     nama: '',
     tema,
@@ -47,7 +47,7 @@ export function createDefaultProgress(tema: ThemeMode = 'dark'): ProgressState {
 
 export function loadProgress(store: SafeStorage = storage): ProgressState {
   const savedTema = store.get(THEME_STORAGE_KEY);
-  const fallbackTema: ThemeMode = savedTema === 'light' ? 'light' : 'dark';
+  const fallbackTema: ThemeMode = savedTema === 'dark' ? 'dark' : 'light';
   const parsed = store.getJSON<Partial<ProgressState> | null>(PROGRESS_STORAGE_KEY, null);
 
   if (!parsed || typeof parsed !== 'object') {
@@ -160,7 +160,7 @@ export function applyCaseResult(
 
 export function resetProgressStorage(store: SafeStorage = storage): ProgressState {
   store.clearPrefix();
-  return createDefaultProgress('dark');
+  return createDefaultProgress('light');
 }
 
 function syncDocumentTheme(tema: ThemeMode): void {
@@ -171,6 +171,10 @@ function syncDocumentTheme(tema: ThemeMode): void {
     root.classList.add('dark');
   } else {
     root.classList.remove('dark');
+  }
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+  if (metaTheme) {
+    metaTheme.setAttribute('content', tema === 'dark' ? '#08120F' : '#00A572');
   }
 }
 

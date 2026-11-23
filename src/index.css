@@ -9,43 +9,43 @@
 }
 
 :root {
-  --bg-base: #F6F7F4;
-  --bg-surface: rgba(255, 255, 255, 0.88);
+  --bg-base: #EDF8F4;
+  --bg-surface: rgba(255, 255, 255, 0.90);
   --bg-elevated: #FFFFFF;
-  --bg-muted: #ECEEE8;
-  --bg-negatoscope: #0D141C;
-  --border-subtle: rgba(15, 23, 42, 0.12);
-  --border-strong: rgba(15, 118, 110, 0.35);
-  --text-primary: #0F172A;
-  --text-secondary: #334155;
-  --text-muted: #475569;
-  --accent-primary: #0E7490;
+  --bg-muted: #DAF1E8;
+  --bg-negatoscope: #081511;
+  --border-subtle: rgba(0, 102, 71, 0.14);
+  --border-strong: rgba(0, 165, 114, 0.42);
+  --text-primary: #0A241C;
+  --text-secondary: #2B5245;
+  --text-muted: #476D60;
+  --accent-primary: #00A572;
   --on-accent: #FFFFFF;
-  --accent-secondary: #0F766E;
+  --accent-secondary: #007A54;
   --accent-amber: #B45309;
-  --accent-success: #047857;
+  --accent-success: #00855B;
   --accent-danger: #BE123C;
-  --negatoscope-glow: 0 12px 32px -12px rgba(14, 116, 144, 0.2);
+  --negatoscope-glow: 0 12px 32px -12px rgba(0, 165, 114, 0.26);
 }
 
 html.dark {
-  --bg-base: #0B0F14;
-  --bg-surface: rgba(17, 24, 34, 0.78);
-  --bg-elevated: #121A24;
-  --bg-muted: #16202C;
-  --bg-negatoscope: #070B10;
-  --border-subtle: rgba(148, 163, 184, 0.16);
-  --border-strong: rgba(34, 211, 238, 0.34);
-  --text-primary: #F1F5F9;
-  --text-secondary: #94A3B8;
-  --text-muted: #94A3B8;
-  --accent-primary: #22D3EE;
-  --on-accent: #020617;
-  --accent-secondary: #14B8A6;
+  --bg-base: #08120F;
+  --bg-surface: rgba(14, 28, 23, 0.84);
+  --bg-elevated: #0F1E19;
+  --bg-muted: #162B24;
+  --bg-negatoscope: #050C0A;
+  --border-subtle: rgba(110, 231, 183, 0.15);
+  --border-strong: rgba(0, 165, 114, 0.48);
+  --text-primary: #ECFDF6;
+  --text-secondary: #A3C9BC;
+  --text-muted: #7FA89B;
+  --accent-primary: #00A572;
+  --on-accent: #FFFFFF;
+  --accent-secondary: #34D399;
   --accent-amber: #F59E0B;
   --accent-success: #34D399;
   --accent-danger: #FB7185;
-  --negatoscope-glow: 0 0 36px -10px rgba(34, 211, 238, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  --negatoscope-glow: 0 0 36px -10px rgba(0, 165, 114, 0.30), inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 @layer base {
@@ -87,10 +87,12 @@ html.dark {
 }
 
 .negatoscope-frame {
-  --text-primary: #F1F5F9;
-  --text-secondary: #CBD5E1;
-  --text-muted: #94A3B8;
-  --border-subtle: rgba(148, 163, 184, 0.24);
+  --text-primary: #ECFDF6;
+  --text-secondary: #A3C9BC;
+  --text-muted: #7FA89B;
+  --border-subtle: rgba(110, 231, 183, 0.22);
+  --accent-primary: #34D399;
+  --accent-secondary: #6EE7B7;
   --accent-success: #34D399;
   --accent-amber: #F59E0B;
   background-color: var(--bg-negatoscope);
@@ -100,14 +102,14 @@ html.dark {
 
 .clinical-grid-bg {
   background-image:
-    linear-gradient(to right, rgba(34, 211, 238, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(34, 211, 238, 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 165, 114, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 165, 114, 0.05) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
 html:not(.dark) .clinical-grid-bg {
   background-image:
-    linear-gradient(to right, rgba(14, 116, 144, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(14, 116, 144, 0.05) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 165, 114, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 165, 114, 0.06) 1px, transparent 1px);
   background-size: 32px 32px;
 }
