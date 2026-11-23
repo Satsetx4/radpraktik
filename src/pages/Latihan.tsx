@@ -10,6 +10,7 @@ import { getAdjacentModuls, getModulBySlug, getModulMeta, getSoalByModul } from 
 import type { Soal } from '../data/types';
 import { getTransition, TAP_FEEDBACK } from '../lib/motion';
 import { useProgress } from '../lib/progress';
+import { scrollToTopInstant } from '../lib/scroll';
 import { shuffleArray, shuffleQuestion } from '../lib/shuffle';
 import { trackEvent } from '../lib/track';
 
@@ -46,6 +47,7 @@ export function Latihan() {
       startedAt: Date.now(),
     });
     trackEvent('mulai_latihan', { modul: slug });
+    scrollToTopInstant();
   }, [rawSoal, setActiveQuiz, slug]);
 
   useEffect(() => {
@@ -138,6 +140,7 @@ export function Latihan() {
         jawaban: answers,
         startedAt: progress.kuisAktif?.startedAt ?? Date.now(),
       });
+      scrollToTopInstant();
       return;
     }
 
@@ -149,6 +152,7 @@ export function Latihan() {
     setFinishedScore(skor);
     recordQuizScore(slug, skor);
     trackEvent('selesai_latihan', { modul: slug, skor });
+    scrollToTopInstant();
   };
 
   if (finishedScore !== null) {

@@ -20,6 +20,7 @@ import { REGION_MAP } from '../data/regions';
 import type { TahapId } from '../data/types';
 import { getTransition, TAP_FEEDBACK } from '../lib/motion';
 import { useProgress } from '../lib/progress';
+import { scrollToTopInstant } from '../lib/scroll';
 
 function parseTahap(raw: string | null): TahapId {
   if (raw === 'proyeksi' || raw === 'proteksi' || raw === 'latihan') return raw;
@@ -48,6 +49,7 @@ export function ModulDetail() {
 
   const handleStageChange = (tahap: TahapId) => {
     setSearchParams({ tahap }, { replace: true });
+    scrollToTopInstant();
   };
 
   if (!meta && !modul) {

@@ -17,6 +17,7 @@ import { ALL_KASUS, getModulMeta } from '../data';
 import type { Kasus as KasusType } from '../data/types';
 import { getTransition, TAP_FEEDBACK } from '../lib/motion';
 import { useProgress } from '../lib/progress';
+import { scrollToTopInstant } from '../lib/scroll';
 import { shuffleArray, shuffleKasusTahap } from '../lib/shuffle';
 import { trackEvent } from '../lib/track';
 
@@ -52,6 +53,7 @@ export function Kasus() {
     setIdx(0);
     setAns1(null);
     setAns2(null);
+    scrollToTopInstant();
   }, []);
 
   const handleNextCase = () => {
@@ -63,6 +65,7 @@ export function Kasus() {
       setDeck(prepareCaseDeck(ALL_KASUS));
       setIdx(0);
     }
+    scrollToTopInstant();
   };
 
   const handleSelectTahap1 = (optIdx: number) => {

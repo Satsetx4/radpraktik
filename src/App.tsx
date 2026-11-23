@@ -1,11 +1,12 @@
 import { Analytics } from '@vercel/analytics/react';
 import { MotionConfig } from 'motion/react';
 import { useEffect, useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { MobileBottomNav } from './components/MobileBottomNav';
 import { OnboardingModal } from './components/OnboardingModal';
 import { ProgressProvider, useProgress } from './lib/progress';
+import { scrollToTopInstant } from './lib/scroll';
 import { Home } from './pages/Home';
 import { Kasus } from './pages/Kasus';
 import { Latihan } from './pages/Latihan';
@@ -14,6 +15,16 @@ import { ModulList } from './pages/ModulList';
 import { NotFound } from './pages/NotFound';
 import { Progres } from './pages/Progres';
 import { Tentang } from './pages/Tentang';
+
+function ScrollToTop() {
+  const { pathname, search } = useLocation();
+
+  useEffect(() => {
+    scrollToTopInstant();
+  }, [pathname, search]);
+
+  return null;
+}
 
 function AppShell() {
   const { progress, setNama } = useProgress();
@@ -39,6 +50,7 @@ function AppShell() {
 
   return (
     <div className="min-h-[100dvh] md:pl-64">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home onOpenOnboarding={() => setOnboardingOpen(true)} />} />
         <Route path="/modul" element={<ModulList />} />
