@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id" class="dark" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RadPraktik — Belajar Teknik Radiografi 1 Interaktif</title>
+    <meta
+      name="description"
+      content="Web app belajar interaktif 24 Modul Praktek Laboratorium Teknik Radiografi 1 (JTRR Poltekkes Kemenkes Semarang): materi proyeksi, latihan 240 soal, dan 30 studi kasus."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="" />
+    <meta name="theme-color" content="#0B0F14" />
+
+    <link rel="canonical" href="https://radpraktik.rindia.my.id/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RadPraktik" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:url" content="https://radpraktik.rindia.my.id/" />
+    <meta property="og:title" content="RadPraktik — Belajar Teknik Radiografi 1 Interaktif" />
+    <meta
+      property="og:description"
+      content="Materi ringkas 24 modul proyeksi radiografi, 240 soal latihan acak dengan pembahasan, dan 30 kasus klinis bertahap."
+    />
+    <meta property="og:image" content="https://radpraktik.rindia.my.id/favicon.svg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RadPraktik — Belajar Teknik Radiografi 1 Interaktif" />
+    <meta
+      name="twitter:description"
+      content="Materi ringkas 24 modul proyeksi radiografi, 240 soal latihan acak dengan pembahasan, dan 30 kasus klinis bertahap."
+    />
+    <meta name="twitter:image" content="https://radpraktik.rindia.my.id/favicon.svg" />
+
+    <!-- Google Fonts: Space Grotesk, IBM Plex Sans, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Anti-FOUC Theme Boot Script -->
+    <script>
+      (function () {
+        var tema = 'dark';
+        try {
+          var saved = localStorage.getItem('radpraktik:v1:tema');
+          if (saved === 'light' || saved === 'dark') {
+            tema = saved;
+          } else {
+            var raw = localStorage.getItem('radpraktik:v1:progress');
+            if (raw) {
+              var parsed = JSON.parse(raw);
+              if (parsed && (parsed.tema === 'light' || parsed.tema === 'dark')) {
+                tema = parsed.tema;
+              }
+            }
+          }
+        } catch (e) {
+          tema = 'dark';
+        }
+        var root = document.documentElement;
+        root.dataset.theme = tema;
+        if (tema === 'dark') {
+          root.classList.add('dark');
+        } else {
+          root.classList.remove('dark');
+        }
+        var metaTheme = document.querySelector('meta[name="theme-color"]');
+        if (metaTheme) {
+          metaTheme.setAttribute('content', tema === 'dark' ? '#0B0F14' : '#F6F7F4');
+        }
+      })();
+    </script>
+
+    <!-- Structured Data: Organization & WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "RadPraktik",
+            "url": "https://radpraktik.rindia.my.id",
+            "logo": "https://radpraktik.rindia.my.id/favicon.svg",
+            "description": "Platform belajar interaktif Teknik Radiografi 1 berdasarkan Modul Praktek Laboratorium JTRR Poltekkes Kemenkes Semarang."
+          },
+          {
+            "@type": "WebSite",
+            "name": "RadPraktik",
+            "url": "https://radpraktik.rindia.my.id",
+            "inLanguage": "id"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

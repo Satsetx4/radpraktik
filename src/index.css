@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg-base: #F6F7F4;
+  --bg-surface: rgba(255, 255, 255, 0.88);
+  --bg-elevated: #FFFFFF;
+  --bg-muted: #ECEEE8;
+  --bg-negatoscope: #0D141C;
+  --border-subtle: rgba(15, 23, 42, 0.12);
+  --border-strong: rgba(15, 118, 110, 0.35);
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #475569;
+  --accent-primary: #0E7490;
+  --accent-secondary: #0F766E;
+  --accent-amber: #B45309;
+  --accent-success: #047857;
+  --accent-danger: #BE123C;
+  --negatoscope-glow: 0 12px 32px -12px rgba(14, 116, 144, 0.2);
+}
+
+html.dark {
+  --bg-base: #0B0F14;
+  --bg-surface: rgba(17, 24, 34, 0.78);
+  --bg-elevated: #121A24;
+  --bg-muted: #16202C;
+  --bg-negatoscope: #070B10;
+  --border-subtle: rgba(148, 163, 184, 0.16);
+  --border-strong: rgba(34, 211, 238, 0.34);
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-muted: #94A3B8;
+  --accent-primary: #22D3EE;
+  --accent-secondary: #14B8A6;
+  --accent-amber: #F59E0B;
+  --accent-success: #34D399;
+  --accent-danger: #FB7185;
+  --negatoscope-glow: 0 0 36px -10px rgba(34, 211, 238, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+.clinical-surface {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.clinical-card {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+}
+
+.negatoscope-frame {
+  background-color: var(--bg-negatoscope);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--negatoscope-glow);
+}
+
+.clinical-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(34, 211, 238, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(34, 211, 238, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+html:not(.dark) .clinical-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(14, 116, 144, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 116, 144, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}

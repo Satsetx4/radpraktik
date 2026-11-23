@@ -5,11 +5,11 @@ Aturan: ambil **tugas pertama yang belum dicentang**, selesaikan sampai DoD terp
 ## Tugas
 
 - [x] **T00 Fondasi serah terima**: AGENTS.md, docs/PLAN.md, TASKS.md, CONTENT_GUIDE.md, MODULES.md, PDF di `sources/pdf/`.
-- [ ] **T01 Ekstraksi teks**: `tools/extract.py` → `tools/raw/<slug>.json` (format: `{ slug, kode, pages, sections: { A..G: { text, pages[] } }, proyeksi: [{ judul, text, pages[] }] }`).
+- [x] **T01 Ekstraksi teks**: `tools/extract.py` → `tools/raw/<slug>.json` (format: `{ slug, kode, pages, sections: { A..G: { text, pages[] } }, proyeksi: [{ judul, text, pages[] }] }`).
   DoD: 24 file JSON (slug sesuai MODULES.md); setiap modul non-orientasi punya section A–F dan ≥1 proyeksi; skrip bisa dijalankan ulang (idempoten).
-- [ ] **T02 Ekstraksi gambar**: `tools/extract_images.py` → `public/img/<slug>/<proyeksi>-<n>.webp` + `tools/raw/images.json` (peta gambar → modul/proyeksi/halaman). Filter <80px, sampul 1096×527, dedupe hash per modul, WebP q85 lebar maks 900px.
+- [x] **T02 Ekstraksi gambar**: `tools/extract_images.py` → `public/img/<slug>/<proyeksi>-<n>.webp` + `tools/raw/images.json` (peta gambar → modul/proyeksi/halaman). Filter <80px, sampul 1096×527, dedupe hash per modul, WebP q85 lebar maks 900px.
   DoD: total `public/img` < 8 MB; tiap modul non-orientasi punya ≥1 gambar; ada lembar kontak `tools/raw/contact-sheet.html` untuk cek visual.
-- [ ] **T03 Kerangka app**: Vite + React 19 + TS strict + Tailwind v4 + motion + Lucide + React Router 7 + vitest + `@vercel/analytics`. Semua komponen, halaman, `lib/` (storage, progress, motion, shuffle, track), tema Clinical Dark + toggle terang anti-kedip, SEO di `index.html`, robots.txt, generator sitemap, favicon SVG asli, 404, ErrorBoundary, `vercel.json`. Berisi `src/data/types.ts` (sesuai PLAN + field `tipe`, `faktorEksposi`, `sumber`) dan `tools/validate-content.ts` yang menegakkan semua **[V]** di CONTENT_GUIDE.
+- [x] **T03 Kerangka app**: Vite + React 19 + TS strict + Tailwind v4 + motion + Lucide + React Router 7 + vitest + `@vercel/analytics`. Semua komponen, halaman, `lib/` (storage, progress, motion, shuffle, track), tema Clinical Dark + toggle terang anti-kedip, SEO di `index.html`, robots.txt, generator sitemap, favicon SVG asli, 404, ErrorBoundary, `vercel.json`. Berisi `src/data/types.ts` (sesuai PLAN + field `tipe`, `faktorEksposi`, `sumber`) dan `tools/validate-content.ts` yang menegakkan semua **[V]** di CONTENT_GUIDE.
   DoD: `npm run build` & `npm test` lolos; app jalan dengan data kosong (empty state rapi, tanpa crash); validator berjalan dan melaporkan "0/24 modul".
 - [ ] **T04 SAMPEL EMAS**: `src/data/modul/manus.ts`, `src/data/soal/manus.ts`, kasus `k01`–`k05` di `src/data/kasus.ts`, persis sesuai CONTENT_GUIDE.
   DoD: validator lolos untuk item tersebut; modul Manus bisa dibuka dari awal sampai skor latihan; 5 kasus bisa dimainkan; screenshot HP 360px disimpan di `docs/review/`.
@@ -31,3 +31,6 @@ Aturan: ambil **tugas pertama yang belum dicentang**, selesaikan sampai DoD terp
 | Tanggal | Agent | Tugas | Status | Catatan / lanjut dari mana |
 |---|---|---|---|---|
 | 2026-11-23 | Antigravity (planner) | T00 | Selesai | Repo dibuat. Rencana disetujui Ard. Lanjut: T01. |
+| 2026-11-23 | extractor (Gemini 4 Hydrogen) | T01 | Selesai | Ekstraksi 24 PDF (204 hal, 54 proyeksi) ke `tools/raw/*.json`. Lanjut: T04 (sampel emas Manus + kasus k01-k05). |
+| 2026-11-23 | extractor (Gemini 4 Hydrogen) | T02 | Selesai | Ekstraksi 160 WebP (2,90 MB) ke `public/img/` + `images.json` & `contact-sheet.html`. Lanjut: T04 (sampel emas Manus + kasus k01-k05). |
+| 2026-11-23 | scaffold (Gemini 4 Hydrogen) | T03 | Selesai | Kerangka React 19 + TS strict + Clinical Dark, validator `[V]`, dan 9/9 unit test lolos. Lanjut: T04 (sampel emas Manus + kasus k01-k05). |
