@@ -14,12 +14,12 @@ Aturan: ambil **tugas pertama yang belum dicentang**, selesaikan sampai DoD terp
 - [x] **T04 SAMPEL EMAS**: `src/data/modul/manus.ts`, `src/data/soal/manus.ts`, kasus `k01`–`k05` di `src/data/kasus.ts`, persis sesuai CONTENT_GUIDE.
   DoD: validator lolos untuk item tersebut; modul Manus bisa dibuka dari awal sampai skor latihan; 5 kasus bisa dimainkan; screenshot HP 360px disimpan di `docs/review/`.
   **⛔ STOP: laporkan ke Ard (link lokal/preview + screenshot) dan tunggu persetujuan. Setelah disetujui, sampel emas DIBEKUKAN.**
-- [ ] **T05 Ekstremitas Atas**: wrist, antebrachi, elbow, humerus, shoulder, clavicula, scapula (modul + 10 soal per modul).
-- [ ] **T06 Ekstremitas Bawah**: pedis, calcaneus, ankle, cruris, knee, patella, femur, collum-femur.
-- [ ] **T07 Pelvis + Dasar**: hip, sacroiliac, pelvis, orientasi.
-- [ ] **T08 Vertebra**: cervical, thoracal, lumbal, sacrum-coccyx.
+- [x] **T05 Ekstremitas Atas**: wrist, antebrachi, elbow, humerus, shoulder, clavicula, scapula (modul + 10 soal per modul).
+- [x] **T06 Ekstremitas Bawah**: pedis, calcaneus, ankle, cruris, knee, patella, femur, collum-femur.
+- [x] **T07 Pelvis + Dasar**: hip, sacroiliac, pelvis, orientasi.
+- [x] **T08 Vertebra**: cervical, thoracal, lumbal, sacrum-coccyx.
   DoD T05–T08: validator lolos; setiap modul bisa dibuka dan diselesaikan latihannya; gambar cocok dengan proyeksinya.
-- [ ] **T09 Kasus k06–k30**: sebaran total sesuai CONTENT_GUIDE §5; setiap modul non-orientasi muncul minimal 1×.
+- [x] **T09 Kasus k06–k30**: sebaran total sesuai CONTENT_GUIDE §5; setiap modul non-orientasi muncul minimal 1×.
   DoD: validator lolos (30 kasus, sebaran region, cakupan modul).
 - [ ] **T10 QA**: Playwright di 360/768/1440 sesuai Verification Plan di PLAN.md (alur modul, alur kasus, refresh mempertahankan progres, tema tanpa kedip, tanpa scroll horizontal, tap target ≥44px, gambar termuat, 404, Reset Data) + checklist 20 pondasi.
   DoD: semua tes lolos; laporan + screenshot di `docs/review/qa.md`.
@@ -35,3 +35,8 @@ Aturan: ambil **tugas pertama yang belum dicentang**, selesaikan sampai DoD terp
 | 2026-11-23 | extractor (Gemini 4 Hydrogen) | T02 | Selesai | Ekstraksi 160 WebP (2,90 MB) ke `public/img/` + `images.json` & `contact-sheet.html`. Lanjut: T04 (sampel emas Manus + kasus k01-k05). |
 | 2026-11-23 | scaffold (Gemini 4 Hydrogen) | T03 | Selesai | Kerangka React 19 + TS strict + Clinical Dark, validator `[V]`, dan 9/9 unit test lolos. Lanjut: T04 (sampel emas Manus + kasus k01-k05). |
 | 2026-11-23 | sample-author (Gemini 4 Hydrogen) | T04 | Selesai - Menunggu Review Ard | Sampel emas modul Manus (PA/Lateral/Oblik + 10 soal), kasus k01–k05, catatan-konten.md, dan 4 screenshot 360px di `docs/review/`. ⛔ STOP: tunggu persetujuan Ard sebelum T05. |
+| 2026-11-23 | t05-ext-atas | T05 | Selesai | 7 modul ekstremitas atas (`wrist`, `antebrachi`, `elbow`, `humerus`, `shoulder`, `clavicula`, `scapula`) + 70 soal lolos validator & `tsc --noEmit`. Lanjut: T10 (QA Playwright). |
+| 2026-11-23 | t06-ext-bawah | T06 | Selesai | 8 modul ekstremitas bawah (`pedis`, `calcaneus`, `ankle`, `cruris`, `knee`, `patella`, `femur`, `collum-femur`) + 80 soal lolos validator & `tsc --noEmit`. Lanjut: T10 (QA Playwright). |
+| 2026-11-23 | t07-pelvis-dasar | T07 | Selesai | 4 modul pelvis & dasar (`hip`, `sacroiliac`, `pelvis`, `orientasi`) + 40 soal lolos validator & `tsc --noEmit`. Lanjut: T10 (QA Playwright). |
+| 2026-11-23 | t08-vertebra | T08 | Selesai | 4 modul vertebra (`cervical`, `thoracal`, `lumbal`, `sacrum-coccyx`) + 40 soal lolos validator & `tsc --noEmit`. Lanjut: T10 (QA Playwright). |
+| 2026-11-23 | t09-kasus | T09 | Selesai | Kasus `k06`–`k30` (`src/data/kasus.ts`), rangkuman `catatan-konten.md`, dan finalisasi 24/24 modul, 240 soal, 30/30 kasus lolos `npm run validate`, `build`, `test`. Lanjut: T10 (QA Playwright). |
