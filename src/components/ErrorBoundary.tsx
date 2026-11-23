@@ -41,7 +41,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
               <button
                 type="button"
                 onClick={() => window.location.reload()}
-                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl bg-[var(--accent-primary)] px-4 text-sm font-semibold text-slate-950"
+                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl bg-[var(--accent-primary)] px-4 text-sm font-semibold text-[var(--on-accent)]"
               >
                 <RotateCcw className="h-4 w-4" aria-hidden="true" />
                 Muat Ulang

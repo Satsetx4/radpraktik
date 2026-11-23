@@ -20,6 +20,7 @@
   --text-secondary: #334155;
   --text-muted: #475569;
   --accent-primary: #0E7490;
+  --on-accent: #FFFFFF;
   --accent-secondary: #0F766E;
   --accent-amber: #B45309;
   --accent-success: #047857;
@@ -39,6 +40,7 @@ html.dark {
   --text-secondary: #94A3B8;
   --text-muted: #94A3B8;
   --accent-primary: #22D3EE;
+  --on-accent: #020617;
   --accent-secondary: #14B8A6;
   --accent-amber: #F59E0B;
   --accent-success: #34D399;
@@ -85,6 +87,12 @@ html.dark {
 }
 
 .negatoscope-frame {
+  --text-primary: #F1F5F9;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --border-subtle: rgba(148, 163, 184, 0.24);
+  --accent-success: #34D399;
+  --accent-amber: #F59E0B;
   background-color: var(--bg-negatoscope);
   border: 1px solid var(--border-strong);
   box-shadow: var(--negatoscope-glow);

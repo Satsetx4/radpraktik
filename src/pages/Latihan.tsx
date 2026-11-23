@@ -92,7 +92,7 @@ export function Latihan() {
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link
                 to={`/modul/${slug}`}
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950"
+                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)]"
               >
                 <ArrowLeft className="h-4 w-4" aria-hidden="true" />
                 <span>Kembali ke Modul</span>
@@ -183,7 +183,7 @@ export function Latihan() {
                 type="button"
                 whileTap={reduced ? undefined : TAP_FEEDBACK}
                 onClick={startFreshQuiz}
-                className="inline-flex min-h-[46px] items-center justify-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950"
+                className="inline-flex min-h-[46px] items-center justify-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)]"
               >
                 <RotateCcw className="h-4 w-4" aria-hidden="true" />
                 <span>Ulangi Latihan</span>
@@ -247,7 +247,7 @@ export function Latihan() {
               type="button"
               whileTap={reduced ? undefined : TAP_FEEDBACK}
               onClick={handleNext}
-              className="inline-flex min-h-[46px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-6 text-sm font-semibold text-slate-950"
+              className="inline-flex min-h-[46px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-6 text-sm font-semibold text-[var(--on-accent)]"
             >
               <span>{isLast ? 'Lihat Hasil Skor' : 'Soal Berikutnya'}</span>
               <ArrowRight className="h-4 w-4" aria-hidden="true" />

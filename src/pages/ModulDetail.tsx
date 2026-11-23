@@ -67,7 +67,7 @@ export function ModulDetail() {
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link
                 to="/modul"
-                className="inline-flex min-h-[44px] items-center rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950"
+                className="inline-flex min-h-[44px] items-center rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)]"
               >
                 Lihat Daftar Modul
               </Link>
@@ -120,7 +120,7 @@ export function ModulDetail() {
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link
                 to="/modul"
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950"
+                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)]"
               >
                 <ArrowLeft className="h-4 w-4" aria-hidden="true" />
                 <span>Kembali ke Daftar Modul</span>
@@ -237,7 +237,7 @@ export function ModulDetail() {
                 type="button"
                 whileTap={reduced ? undefined : TAP_FEEDBACK}
                 onClick={() => handleStageChange('proyeksi')}
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950"
+                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)]"
               >
                 <span>Lanjut: Proyeksi &amp; Teknik</span>
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -273,7 +273,7 @@ export function ModulDetail() {
                 type="button"
                 whileTap={reduced ? undefined : TAP_FEEDBACK}
                 onClick={() => handleStageChange('proteksi')}
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950"
+                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)]"
               >
                 <span>Lanjut: Proteksi &amp; Evaluasi</span>
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -340,7 +340,7 @@ export function ModulDetail() {
             <div className="flex justify-end">
               <Link
                 to={`/modul/${modul.slug}/latihan`}
-                className="inline-flex min-h-[46px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950"
+                className="inline-flex min-h-[46px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)]"
               >
                 <PlayCircle className="h-4 w-4" aria-hidden="true" />
                 <span>Mulai Latihan {soalList.length || 10} Soal</span>
@@ -381,7 +381,7 @@ export function ModulDetail() {
               {soalList.length > 0 ? (
                 <Link
                   to={`/modul/${modul.slug}/latihan`}
-                  className="inline-flex min-h-[46px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-6 text-sm font-semibold text-slate-950"
+                  className="inline-flex min-h-[46px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-6 text-sm font-semibold text-[var(--on-accent)]"
                 >
                   <PlayCircle className="h-4 w-4" aria-hidden="true" />
                   <span>{hasResumeQuiz ? 'Lanjutkan Latihan' : 'Mulai Latihan Sekarang'}</span>

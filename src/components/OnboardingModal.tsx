@@ -138,7 +138,7 @@ export function OnboardingModal({
                 <motion.button
                   type="submit"
                   whileTap={reduced ? undefined : TAP_FEEDBACK}
-                  className="min-h-[44px] rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950 transition-opacity hover:opacity-95"
+                  className="min-h-[44px] rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)] transition-opacity hover:opacity-95"
                 >
                   Mulai Belajar
                 </motion.button>

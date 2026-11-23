@@ -105,7 +105,7 @@ export function Tentang() {
         <div className="flex flex-wrap gap-3">
           <Link
             to="/modul"
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950"
+            className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)]"
           >
             <BookOpen className="h-4 w-4" aria-hidden="true" />
             <span>Buka Daftar Modul</span>

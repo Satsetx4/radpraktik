@@ -38,7 +38,7 @@ export function NotFound() {
             <motion.div whileTap={reduced ? undefined : TAP_FEEDBACK}>
               <Link
                 to="/"
-                className="inline-flex min-h-[46px] w-full items-center justify-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950 sm:w-auto"
+                className="inline-flex min-h-[46px] w-full items-center justify-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)] sm:w-auto"
               >
                 <Home className="h-4 w-4" aria-hidden="true" />
                 <span>Kembali ke Beranda</span>

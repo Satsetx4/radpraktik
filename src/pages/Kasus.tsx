@@ -115,7 +115,7 @@ export function Kasus() {
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link
                 to="/modul"
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950"
+                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)]"
               >
                 <BookOpen className="h-4 w-4" aria-hidden="true" />
                 <span>Jelajahi Modul</span>
@@ -349,7 +349,7 @@ export function Kasus() {
                 type="button"
                 whileTap={reduced ? undefined : TAP_FEEDBACK}
                 onClick={handleNextCase}
-                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950"
+                className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)]"
               >
                 <span>Kasus Berikutnya</span>
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />

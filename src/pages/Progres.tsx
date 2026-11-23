@@ -153,7 +153,7 @@ export function Progres({ onOpenOnboarding }: ProgresProps) {
                       </span>
                       <Link
                         to={`/modul/${meta.slug}/latihan`}
-                        className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl bg-[var(--accent-primary)] px-3.5 text-xs font-semibold text-slate-950"
+                        className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl bg-[var(--accent-primary)] px-3.5 text-xs font-semibold text-[var(--on-accent)]"
                       >
                         <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
                         <span>Ulangi</span>

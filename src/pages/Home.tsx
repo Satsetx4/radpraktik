@@ -79,7 +79,7 @@ export function Home({ onOpenOnboarding }: HomeProps) {
                         progress.tahapTerakhir ? `?tahap=${progress.tahapTerakhir}` : ''
                       }`}
                       onClick={() => trackEvent('cta_click', { target: 'lanjut_modul' })}
-                      className="inline-flex min-h-[46px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950 transition-opacity hover:opacity-95"
+                      className="inline-flex min-h-[46px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)] transition-opacity hover:opacity-95"
                     >
                       <Play className="h-4 w-4" aria-hidden="true" />
                       <span>Lanjutkan: {lastMeta.judul}</span>
@@ -90,7 +90,7 @@ export function Home({ onOpenOnboarding }: HomeProps) {
                     <Link
                       to="/modul"
                       onClick={() => trackEvent('cta_click', { target: 'jelajahi_modul' })}
-                      className="inline-flex min-h-[46px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-slate-950 transition-opacity hover:opacity-95"
+                      className="inline-flex min-h-[46px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)] transition-opacity hover:opacity-95"
                     >
                       <BookOpen className="h-4 w-4" aria-hidden="true" />
                       <span>Jelajahi 24 Modul</span>

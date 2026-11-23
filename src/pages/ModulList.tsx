@@ -127,7 +127,7 @@ export function ModulList() {
                 setQuery('');
                 setSelectedRegion('all');
               }}
-              className="mt-4 inline-flex min-h-[44px] items-center rounded-xl bg-[var(--accent-primary)] px-4 text-sm font-semibold text-slate-950"
+              className="mt-4 inline-flex min-h-[44px] items-center rounded-xl bg-[var(--accent-primary)] px-4 text-sm font-semibold text-[var(--on-accent)]"
             >
               Tampilkan Semua Modul
             </button>
