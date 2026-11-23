@@ -1,0 +1,100 @@
+{
+  "slug": "clavicula",
+  "kode": "301-5A",
+  "judul": "Os Clavicula",
+  "region": "ekstremitas-atas",
+  "sourcePdf": "PEDOMAN PRAKTEK RAD 301-5A OS CLAVICULA.pdf",
+  "pages": 6,
+  "sections": {
+    "A": {
+      "heading": "A. Kompetensi :",
+      "text": "A. Kompetensi :\nMahasiswa  melakukan teknik radiografi os clavicle dengan baik dan benar : simulasi, role\nplay, realplay.",
+      "pages": [
+        2
+      ]
+    },
+    "B": {
+      "heading": "B. Administrasi pemeriksaan radiografi",
+      "text": "B. Administrasi pemeriksaan radiografi\n1. Lembar permintaan pemeriksaan radiografi\na. Pasien datang dengan lembar permintaan pemeriksaan radiografi\nb. Form berisi tentang :\n Identitas pasien : nama, umur, alamat, no. catatan medik (CM/RM), asal rujukan\n(poli/rajal, ranap, IGD atau dokter praktek)\n Permintaan foto\n Riwayat penyakit\n2. Pendataan pasien pada buku registrasi dan kelengkapannya\na. Pencatatan identitas pasien ke dalam buku registrasi dan pemberian nomor foto pasien\nyang ditulis juga pada lembar permintaan pasien.\nb. Membuat kartu ambil foto\nc. Membuat amplop foto sesuai dengan film yang digunakan.",
+      "pages": [
+        2
+      ]
+    },
+    "C": {
+      "heading": "C. Pra pemeriksaan",
+      "text": "C. Pra pemeriksaan\n1. Pemanggilan pasien\na. Memanggil pasien sesuai dengan nama yang ada pada lembar permintaan foto\nb. Mencocokan identitas pasien (nama, umur, alamat) apabila benar pasien dipersilahkan\nmasuk ke dalam ruang pemeriksaan.\nc. Contoh : “Maaf bapak/ibu” nama lengkap bapak/ibu siapa?, Umurnya berapa?,\nAlamatnya dimana?\n2. Perkenalan diri\na. Mahasiswa  memperkenalkan diri dengan memberi salam, menyebutkan nama dan\nunit tugasnya kepada pasien.\nb. Contoh : “Selamat pagi, nama saya Ahmad, saya mahasiswa  radiologi yang akan\nmelakukan pemeriksaan radiologi kepada bapak/ibu”\n3. Anamnase singkat (keluhan pasien dan keadaan umum pasien)\na. Mahasiswa  melihat keadaan umum pasien (datang sendiri, dibantu orang lain, dapat\nberdiri atau menggunakan alat tertentu)\nb. Mahasiswa  menanyakan perihal keluhan yang dirasakan oleh pasien dan posisi yang\nsakit tanpa menyebutkan apa yang tertulis pada lembar permintaan foto. Contoh :\n“Maaf Pak/ibu,bagian bahu mana yang terasa sakit? Kanan atau kiri? Depan atau\nbelakang?”\nc. Mahasiswa  melakukan “recall “ gambaran anatomi normal regio bagian tubuh pasien\nyang akan di periksa secara radiografi mengacu pada informasi kriteria anatomi\nradiologi sebagai berikut:\n\n4. Analisa kebutuhan pemeriksaan radiografi\nSetelah selesai anamnase, Mahasiswa harus dengan segera dapat menentuan kesesuaian\ntindakan radiografi dengan kondisi klinis pasien, yang meliputi : teknik pemeriksaan\nradiografi, proyeksi yang akan digunakan (AP axial), persiapan pasien dan alat.\n5. Penjelasan ringkas prosedur\nSetelah penentuan tindakan radiografi, pasien diberi penjelasan singkat mengenai apa\nyang akan dilakukan selama pemeriksaan\n6. Persiapan pasien\nPastikan tidak ada benda logam atau benda lain pada bahu yang akan diperiksa, contoh :\nkancing, pin, jarum temiti. Apabila memungkinkan pasien diminta untuk ganti baju\ndengan baju pasien yang sudah disediakan.\n7. Persiapan alat\na. Pesawat sinar –x siap pakai\nb. Kaset radiografi dan film, hanger ukuran 18x24 cm\nc. Radiographic phantom\nd. Marker, plester dan gunting\ne. Lembar Pb\nf. Meteran\ng. Apron",
+      "pages": [
+        2,
+        3,
+        4
+      ]
+    },
+    "D": {
+      "heading": "D. Pelaksanaan Pemeriksaan",
+      "text": "D. Pelaksanaan Pemeriksaan\n1. Proyeksi AP axial\na. Posisi pasien (PP)\nPasien berdiri atau duduk menghadap ke tabung pesawat sinar-X. Bisa juga dalam\nposisi supine.\nb. Posisi objek (PO)\n1) Bila pasien berdiri: kepala, leher dan bahu menempel di bucky stand. Atur\nklavikula di tengah kaset\n2) Bila pasien supine: atur klavikula di tengah kaset.\n3) Posisi kaset melintang, dengan batas atas kaset 3-4 cm di atas prosesus akromion,\ndan pastikan sternoclavicular joint hingga prosesus akromion masuk dalam kaset.\n4) Berilah arahan kepada pasien untuk dalam keadaan rileks untuk menghindari\npergerakan dan bahu tidak terangkat\nc. Pengaturan sinar :\n1) Arah sinar/central ray (CR)  :  sudutkan tabung 15-30o ke arah cephalad\n2) Titik bidik/central point (CP) : pada mid klavikula (titik tengah antara prosesus\nakromion\ndan\nsternoclavicular\njoint\npada\npertengahan os klavikula)\n3) Focus film distance (FFD)\n:  100 cm\n4) Faktor eksposi\n:  72 kVp, 10 mAs, grid (bila diperlukan), film speed\n400\n\nAba-aba eksposi: inspirasi penuh dan tahan nafas",
+      "pages": [
+        4,
+        5
+      ]
+    },
+    "E": {
+      "heading": "E. Proteksi radiasi :",
+      "text": "E. Proteksi radiasi :\n1. Gunakan apron untuk menutupi daerah panggul pasien agar organ reproduksi terlindungi\ndari sinar hambur.\n2. Atur luas lapangan seoptimal mungkin, obyek yang diperiksa masuk dalam penyinaran,\nmaksimal seluas lapangan kaset yang digunakan.\n3. Beri arahan kepada pasien agar pandangan mata menjauh dari sumber sinar-x.\n4. Mempersilahkan orang yang tidak berkepentingan di dalam ruang pemeriksaan untuk\nkeluar ruangan, apabila terpaksa harus ada orang yang mendampingi, maka orang tersebut\nharus dikenakan apron.\n5. Menghindari/tidak melakukan pengulangan foto.",
+      "pages": [
+        5
+      ]
+    },
+    "F": {
+      "heading": "F. Pasca pemeriksaan",
+      "text": "F. Pasca pemeriksaan\n1. Pemprosesan film\na. Dilakukan di kamar gelap, lampu general dimatikan\nb. Buka kaset dan pasang film pada hanger\nc. Masukkan film ke dalam cairan developer hingga muncul gambaran laten (4 menit)\ndengan cara menginspeksi film menggunakan cahaya safety light (jangan sering\ndilakukan)\nd. Bila bayangan laten muncul, film di rinshing pada tangki rinshing kemudian\nmasukkan film pada cairan fixer agar gambaran menjadi gambaran tetap.\ne. Kemudian film di washing dan dikeringkan pada mesin pengering.\n2. Penanganan pasien setelah pemeriksaan\na. Memberi arahan untuk menunggu hasil pemprosesan film.\nb. Mempersilakan pasien untuk melepas baju pasien dan memakai bajunya kembali.\nc. Apabila hasil sudah baik maka pasien diberi kartu ambil foto.\nd. Mempersilahkan pasien untuk kembali ke asal rujukan.",
+      "pages": [
+        5,
+        6
+      ]
+    },
+    "G": {
+      "heading": "G. Evaluasi radiografi",
+      "text": "G. Evaluasi radiografi\n1. Gambaran anatomi radiologi\na. Gambarkan anatomi obyek dari organ yang Anda foto!\nb. Sebutkan bagian-bagian dari organ tersebut!\nc. Bandingkan kriteria anatomi radiograf phantom os klavikula yang telah dibuat, dengan\nstandar kriteria evaluasi sbb:\nProyeksi AP lordotic atau AP Axial\n Most of the clavicle projected above the ribs and scapula with the medial end\noverlapping the first or second rib\n Clavicle in a horizontal placement\n Entire clavicle along with the acromioclavicular and sternoclavicular joints\n2. Evaluasi dan penilaian radiograf\na. Gunakan form evaluasi untuk menilai radiograf yang Anda buat!\n3. Penyusunan laporan praktek\na. Gunakan form laporan untuk menyusun laporan praktek!\nb. Lengkapi laporan dengan referensi, minimal 1 textbook.\nc. Laporan dikumpulkan paling lambat 1 hari setelah selesai praktek.\n\nProyeksi AP Axial",
+      "pages": [
+        6
+      ]
+    }
+  },
+  "proyeksi": [
+    {
+      "index": 1,
+      "judul": "1. Proyeksi AP axial",
+      "pages": [
+        4,
+        5
+      ],
+      "text": "1. Proyeksi AP axial\na. Posisi pasien (PP)\nPasien berdiri atau duduk menghadap ke tabung pesawat sinar-X. Bisa juga dalam\nposisi supine.\nb. Posisi objek (PO)\n1) Bila pasien berdiri: kepala, leher dan bahu menempel di bucky stand. Atur\nklavikula di tengah kaset\n2) Bila pasien supine: atur klavikula di tengah kaset.\n3) Posisi kaset melintang, dengan batas atas kaset 3-4 cm di atas prosesus akromion,\ndan pastikan sternoclavicular joint hingga prosesus akromion masuk dalam kaset.\n4) Berilah arahan kepada pasien untuk dalam keadaan rileks untuk menghindari\npergerakan dan bahu tidak terangkat\nc. Pengaturan sinar :\n1) Arah sinar/central ray (CR)  :  sudutkan tabung 15-30o ke arah cephalad\n2) Titik bidik/central point (CP) : pada mid klavikula (titik tengah antara prosesus\nakromion\ndan\nsternoclavicular\njoint\npada\npertengahan os klavikula)\n3) Focus film distance (FFD)\n:  100 cm\n4) Faktor eksposi\n:  72 kVp, 10 mAs, grid (bila diperlukan), film speed\n400\n\nAba-aba eksposi: inspirasi penuh dan tahan nafas"
+    }
+  ],
+  "rawPages": [
+    {
+      "page": 1,
+      "text": "PEDOMAN PRAKTEK LABORATORIUM\nTEKNIK RADIOGRAFI 1\nSIMULASI / ROLE PLAY  5A\nPokok Bahasan :\nTEKNIK RADIOGRAFI OS KLAVIKULA\n\nJURUSAN TEKNIK RADIODIAGNOSTIK DAN RADIOTERAPI\nPOLTEKKES KEMENKES SEMARANG"
+    },
+    {
+      "page": 2,
+      "text": "SIMULASI 5A\nTEKNIK RADIOGRAFI OS CLAVICLE\n\nA. Kompetensi :\nMahasiswa  melakukan teknik radiografi os clavicle dengan baik dan benar : simulasi, role\nplay, realplay.\n\nB. Administrasi pemeriksaan radiografi\n1. Lembar permintaan pemeriksaan radiografi\na. Pasien datang dengan lembar permintaan pemeriksaan radiografi\nb. Form berisi tentang :\n Identitas pasien : nama, umur, alamat, no. catatan medik (CM/RM), asal rujukan\n(poli/rajal, ranap, IGD atau dokter praktek)\n Permintaan foto\n Riwayat penyakit\n2. Pendataan pasien pada buku registrasi dan kelengkapannya\na. Pencatatan identitas pasien ke dalam buku registrasi dan pemberian nomor foto pasien\nyang ditulis juga pada lembar permintaan pasien.\nb. Membuat kartu ambil foto\nc. Membuat amplop foto sesuai dengan film yang digunakan.\n\nC. Pra pemeriksaan\n1. Pemanggilan pasien\na. Memanggil pasien sesuai dengan nama yang ada pada lembar permintaan foto\nb. Mencocokan identitas pasien (nama, umur, alamat) apabila benar pasien dipersilahkan\nmasuk ke dalam ruang pemeriksaan.\nc. Contoh : “Maaf bapak/ibu” nama lengkap bapak/ibu siapa?, Umurnya berapa?,\nAlamatnya dimana?\n2. Perkenalan diri\na. Mahasiswa  memperkenalkan diri dengan memberi salam, menyebutkan nama dan\nunit tugasnya kepada pasien.\nb. Contoh : “Selamat pagi, nama saya Ahmad, saya mahasiswa  radiologi yang akan\nmelakukan pemeriksaan radiologi kepada bapak/ibu”"
+    },
+    {
+      "page": 3,
+      "text": "3. Anamnase singkat (keluhan pasien dan keadaan umum pasien)\na. Mahasiswa  melihat keadaan umum pasien (datang sendiri, dibantu orang lain, dapat\nberdiri atau menggunakan alat tertentu)\nb. Mahasiswa  menanyakan perihal keluhan yang dirasakan oleh pasien dan posisi yang\nsakit tanpa menyebutkan apa yang tertulis pada lembar permintaan foto. Contoh :\n“Maaf Pak/ibu,bagian bahu mana yang terasa sakit? Kanan atau kiri? Depan atau\nbelakang?”\nc. Mahasiswa  melakukan “recall “ gambaran anatomi normal regio bagian tubuh pasien\nyang akan di periksa secara radiografi mengacu pada informasi kriteria anatomi\nradiologi sebagai berikut:\n\n4. Analisa kebutuhan pemeriksaan radiografi\nSetelah selesai anamnase, Mahasiswa harus dengan segera dapat menentuan kesesuaian\ntindakan radiografi dengan kondisi klinis pasien, yang meliputi : teknik pemeriksaan\nradiografi, proyeksi yang akan digunakan (AP axial), persiapan pasien dan alat."
+    },
+    {
+      "page": 4,
+      "text": "5. Penjelasan ringkas prosedur\nSetelah penentuan tindakan radiografi, pasien diberi penjelasan singkat mengenai apa\nyang akan dilakukan selama pemeriksaan\n6. Persiapan pasien\nPastikan tidak ada benda logam atau benda lain pada bahu yang akan diperiksa, contoh :\nkancing, pin, jarum temiti. Apabila memungkinkan pasien diminta untuk ganti baju\ndengan baju pasien yang sudah disediakan.\n7. Persiapan alat\na. Pesawat sinar –x siap pakai\nb. Kaset radiografi dan film, hanger ukuran 18x24 cm\nc. Radiographic phantom\nd. Marker, plester dan gunting\ne. Lembar Pb\nf. Meteran\ng. Apron\n\nD. Pelaksanaan Pemeriksaan\n1. Proyeksi AP axial\na. Posisi pasien (PP)\nPasien berdiri atau duduk menghadap ke tabung pesawat sinar-X. Bisa juga dalam\nposisi supine.\nb. Posisi objek (PO)\n1) Bila pasien berdiri: kepala, leher dan bahu menempel di bucky stand. Atur\nklavikula di tengah kaset\n2) Bila pasien supine: atur klavikula di tengah kaset.\n3) Posisi kaset melintang, dengan batas atas kaset 3-4 cm di atas prosesus akromion,\ndan pastikan sternoclavicular joint hingga prosesus akromion masuk dalam kaset.\n4) Berilah arahan kepada pasien untuk dalam keadaan rileks untuk menghindari\npergerakan dan bahu tidak terangkat\nc. Pengaturan sinar :\n1) Arah sinar/central ray (CR)  :  sudutkan tabung 15-30o ke arah cephalad\n2) Titik bidik/central point (CP) : pada mid klavikula (titik tengah antara prosesus\nakromion\ndan\nsternoclavicular\njoint\npada\npertengahan os klavikula)"
+    },
+    {
+      "page": 5,
+      "text": "3) Focus film distance (FFD)\n:  100 cm\n4) Faktor eksposi\n:  72 kVp, 10 mAs, grid (bila diperlukan), film speed\n400\n\nAba-aba eksposi: inspirasi penuh dan tahan nafas\n\nE. Proteksi radiasi :\n1. Gunakan apron untuk menutupi daerah panggul pasien agar organ reproduksi terlindungi\ndari sinar hambur.\n2. Atur luas lapangan seoptimal mungkin, obyek yang diperiksa masuk dalam penyinaran,\nmaksimal seluas lapangan kaset yang digunakan.\n3. Beri arahan kepada pasien agar pandangan mata menjauh dari sumber sinar-x.\n4. Mempersilahkan orang yang tidak berkepentingan di dalam ruang pemeriksaan untuk\nkeluar ruangan, apabila terpaksa harus ada orang yang mendampingi, maka orang tersebut\nharus dikenakan apron.\n5. Menghindari/tidak melakukan pengulangan foto.\n\nF. Pasca pemeriksaan\n1. Pemprosesan film\na. Dilakukan di kamar gelap, lampu general dimatikan\nb. Buka kaset dan pasang film pada hanger\nc. Masukkan film ke dalam cairan developer hingga muncul gambaran laten (4 menit)\ndengan cara menginspeksi film menggunakan cahaya safety light (jangan sering\ndilakukan)\nd. Bila bayangan laten muncul, film di rinshing pada tangki rinshing kemudian\nmasukkan film pada cairan fixer agar gambaran menjadi gambaran tetap.\ne. Kemudian film di washing dan dikeringkan pada mesin pengering."
+    },
+    {
+      "page": 6,
+      "text": "2. Penanganan pasien setelah pemeriksaan\na. Memberi arahan untuk menunggu hasil pemprosesan film.\nb. Mempersilakan pasien untuk melepas baju pasien dan memakai bajunya kembali.\nc. Apabila hasil sudah baik maka pasien diberi kartu ambil foto.\nd. Mempersilahkan pasien untuk kembali ke asal rujukan.\n\nG. Evaluasi radiografi\n1. Gambaran anatomi radiologi\na. Gambarkan anatomi obyek dari organ yang Anda foto!\nb. Sebutkan bagian-bagian dari organ tersebut!\nc. Bandingkan kriteria anatomi radiograf phantom os klavikula yang telah dibuat, dengan\nstandar kriteria evaluasi sbb:\nProyeksi AP lordotic atau AP Axial\n Most of the clavicle projected above the ribs and scapula with the medial end\noverlapping the first or second rib\n Clavicle in a horizontal placement\n Entire clavicle along with the acromioclavicular and sternoclavicular joints\n2. Evaluasi dan penilaian radiograf\na. Gunakan form evaluasi untuk menilai radiograf yang Anda buat!\n3. Penyusunan laporan praktek\na. Gunakan form laporan untuk menyusun laporan praktek!\nb. Lengkapi laporan dengan referensi, minimal 1 textbook.\nc. Laporan dikumpulkan paling lambat 1 hari setelah selesai praktek.\n\nProyeksi AP Axial"
+    }
+  ]
+}

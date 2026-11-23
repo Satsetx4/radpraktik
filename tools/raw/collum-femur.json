@@ -1,0 +1,115 @@
+{
+  "slug": "collum-femur",
+  "kode": "301-9B",
+  "judul": "Collum Femur",
+  "region": "ekstremitas-bawah",
+  "sourcePdf": "PEDOMAN PRAKTEK RAD 301-9B collum femur.pdf",
+  "pages": 8,
+  "sections": {
+    "A": {
+      "heading": "A. Kompetensi :",
+      "text": "A. Kompetensi :\nMahasiswa  melakukan teknik radiografi Collum femoris dengan baik dan benar : simulasi,\nrole play, realplay",
+      "pages": [
+        2
+      ]
+    },
+    "B": {
+      "heading": "B. Administrasi pemeriksaan radiografi",
+      "text": "B. Administrasi pemeriksaan radiografi\n1. Lembar permintaan pemeriksaan radiografi\na. Pasien datang dengan lembar permintaan pemeriksaan radiografi\nb. Form berisi tentang :\n Identitas pasien : nama, umur, alamat, no. catatan medik (CM/RM), asal rujukan\n(poli/rajal, ranap, IGD atau dokter praktek)\n Permintaan foto\n Riwayat penyakit\n2. Pendataan pasien pada buku regristrasi dan kelengkapannya\na. Pencatatan identitas pasien ke dalam buku registrasi dan pemberian nomor foto pasien\nyang ditulis juga pada lembar permintaan pasien.\nb. Membuat kartu ambil foto\nc. Membuat amplop foto sesuai dengan film yang digunakan.",
+      "pages": [
+        2
+      ]
+    },
+    "C": {
+      "heading": "C. Pra pemeriksaan",
+      "text": "C. Pra pemeriksaan\n1. Pemanggilan pasien\na. Memanggil pasien sesuai dengan nama yang ada pada lembar permintaan foto\nb. Mencocokan identitas pasien (nama, umur, alamat) apabila benar pasien dipersilahkan\nmasuk ke dalam ruang pemeriksaan.\nc. Contoh : “Maaf bapak/ibu” nama lengkap bapak/ibu siapa?, Umurnya berapa?,\nAlamatnya dimana?\n2. Perkenalan diri\na. Mahasiswa  memperkenalkan diri dengan memberi salam, menyebutkan nama dan\nunit tugasnya kepada pasien.\nb. Contoh : “Selamat pagi, nama saya Lina, saya mahasiswa  radiologi yang akan\nmelakukan pemeriksaan radiologi kepada bapak/ibu”\n3. Anamnase singkat (keluhan pasien dan keadaan umum pasien)\na. Mahasiswa  melihat keadaan umum pasien (datang sendiri, dibantu orang lain, dapat\nberdiri atau menggunakan alat tertentu)\nb. Mahasiswa  menanyakan perihal keluhan yang dirasakan oleh pasien dan posisi yang\nsakit tanpa menyebutkan apa yang tertulis pada lembar permintaan foto. Contoh :\n“Maaf Pak/ibu,bagian mana yang terasa sakit? Kanan atau kiri?”\nc. Mahasiswa  melakukan “recall “ gambaran anatomi normal regio bagian tubuh pasien\nyang akan di periksa secara radiografi mengacu pada informasi kriteria anatomi\nradiologi\nsebagai berikut:\n4. Analisa kebutuhan pemeriksaan radiografi\nSetelah selesai anamnase, Mahasiswa  harus dengan segera dapat menentuan kesesuaian\ntindakan radiografi dengan kondisi klinis pasien, yang meliputi : teknik pemeriksaan\nradiografi, proyeksi yang akan digunakan (Proyeksi unilateral frog-leg (kasus non\ntrauma)), persiapan pasien dan alat\n5. Penjelasan ringkas prosedur\nSetelah penentuan tindakan radiografi, pasien diberi penjelasan singkat mengenai apa\nyang akan dilakukan selama pemeriksaan\n6. Persiapan pasien\nPastikan tidak ada benda logam atau benda lain pada daerah yang akan diperiksa.\n7. Persiapan alat\na. Pesawat sinar –x siap pakai\nb. Kaset radiografi dan film ukuran 24x30 cm\nc. Marker, plester dan gunting\nd. Lembar Pb\ne. Meteran",
+      "pages": [
+        2,
+        3,
+        4
+      ]
+    },
+    "D": {
+      "heading": "D. Pelaksanaan Pemeriksaan",
+      "text": "D. Pelaksanaan Pemeriksaan\n1. Proyeksi Bilateral (Frog-Leg)\na. Posisi pasien (PP)\nSupine, kedua tangan diletakan di dada, beri bantalan pada kepala\nb. Posisi objek (PO)\n Atur MSP pada pertengahan bucky table\n Atur pelvis tidak rotasi dengan mengatur kedua SIAS berjarak sama dengan meja\npemeriksaan\n Beri alat bantu untuk menjaga obyek tetap fiksasi\n Hip joint dan kaki flexi atur kaki abduksi 45 derajat\nc. Pengaturan sinar dan eksposi :\n1) Arah sinar/central ray (CR)  : tegak lurus kaset\n2) Titik bidik/central point (CP) : 2,5 cm superior simphisis pubis\n3) Focus film distance (FFD)   : 100 cm\n4) Faktor eksposi\n\n: 60-65 kVp, 20-25 mAs, grid, film speed\n400\n2. Proyeksi Unilateral (Frog-Leg)\na. Posisi pasien (PP)\nSupine, kedua tangan diletakan di dada, beri bantalan pada kepala,pastikan hip yang\nsakit tercover pada kaset\nb. Posisi objek (PO)\n Fleksi knee dan hip joint yang sakit\n Abduksi femur 45  dari arah vertikal\n Atur Femoral Neck pada pertengahan kaset\n Beri sandbag untuk fiksasi kaki\nc. Pengaturan sinar dan eksposi :\n1) Arah sinar/central ray (CR)  : tegak lurus kaset pada mid femoralneck\n2) Titik bidik/central point (CP) : mid femoralneck\n3) Focus film distance (FFD)   : 100 cm\n4) Faktor eksposi\n\n: 55-65 kVp, 10-12 mAs, grid/non grid, film\nspeed 400",
+      "pages": [
+        4,
+        5
+      ]
+    },
+    "E": {
+      "heading": "E. Proteksi radiasi :",
+      "text": "E. Proteksi radiasi :\n1. Gunakan gonad shield untuk melindungi organ reproduksi terlindungi dari sinar hambur\n2. Luas Lapangan seluas Obyek\n3. Mempersilahkan orang yang tidak berkepentingan di dalam ruang pemeriksaan untuk\nkeluar ruangan, apabila terpaksa harus ada orang yang mendampingi, maka orang tersebut\nharus dikenakan apron",
+      "pages": [
+        7
+      ]
+    },
+    "F": {
+      "heading": "F. Pasca pemeriksaan",
+      "text": "F. Pasca pemeriksaan\n1. Penanganan pasien setelah pemeriksaan\na. Mahasiswa  membantu pasien turun dari meja pemeriksaan\nb. Memberi arahan untuk menunggu hasil pemprosesan film, apabila hasil sudah baik\nmaka pasien diberi kartu ambil foto.\nc. Dan mempersilahkan pasien untuk kembali ke asal rujukan.\n2. Pemprosesan film\na. Dilakukan di kamar gelap, lampu general dimatikan\nb. Buka kaset, ambil film dan pasang film pada hanger\nc. Tahap developing, masukkan film ke dalam cairan developer hingga muncul\ngambaran laten (4 menit), inspeksi film menggunakan cahaya safety light (jangan\nsering dilakukan)\nd. Bila bayangan laten sudah muncul, lanjutkan dengan tahap rinsing dengan\nmemindahkan film pada tangki yang berisi air.\ne. Lanjutkan dengan tahap fixing dengan memasukkan film pada cairan fixer agar\ngambaran menjadi gambaran tetap.\nf. Pada tahap washing, film di masukkan ke air kemudian dikeringkan film pada mesin\npengering film.",
+      "pages": [
+        7
+      ]
+    },
+    "G": {
+      "heading": "G. Evaluasi radiografi / H. Tugas",
+      "text": "G. Evaluasi radiografi\nStructure shown: the bilateral resulting image shows an AP oblique projection of the femoral\nhead, necks and trochanteric area projected onto one radiograph for comparison.\n\nThe following should be clearly demonstrated:\na) No rotation of the pelvis, as evidenced by a symmetric appearance.\nb) Acetabulum, femoral head, and femoral neck\nc) Lesser trochanter on the medial side of the femur.\nd) Femoral neck without superimposition by the greater trochanter. Excess abduction\ncauses the greater trochanter to obstruct the neck.\ne) Femoral axes extended from the hip bone at equal angles.\n\nH. Tugas\n1. Gambaran anatomi radiologi\na. Gambarkan anatomi obyek dari organ yang Anda foto!\nb. Sebutkan bagian-bagian dari organ tersebut!\nc. Bandingkan kriteria anatomi radiograf phantom ossa pedis yang telah dibuat, dengan\nstandar kriteria\n2. Evaluasi dan penilaian radiograf\na. Gunakan form evaluasi untuk menilai radiograf yang Anda buat!\n3. Penyusunan laporan praktek\na. Gunakan form laporan untuk menyusun laporan praktek!\nb. Lengkapi laporan dengan referensi, minimal 1 textbook.\nc. Laporan dikumpulkan paling lambat 1 hari setelah selesai praktek.",
+      "pages": [
+        7,
+        8
+      ]
+    }
+  },
+  "proyeksi": [
+    {
+      "index": 1,
+      "judul": "1. Proyeksi Bilateral (Frog-Leg)",
+      "pages": [
+        4
+      ],
+      "text": "1. Proyeksi Bilateral (Frog-Leg)\na. Posisi pasien (PP)\nSupine, kedua tangan diletakan di dada, beri bantalan pada kepala\nb. Posisi objek (PO)\n Atur MSP pada pertengahan bucky table\n Atur pelvis tidak rotasi dengan mengatur kedua SIAS berjarak sama dengan meja\npemeriksaan\n Beri alat bantu untuk menjaga obyek tetap fiksasi\n Hip joint dan kaki flexi atur kaki abduksi 45 derajat\nc. Pengaturan sinar dan eksposi :\n1) Arah sinar/central ray (CR)  : tegak lurus kaset\n2) Titik bidik/central point (CP) : 2,5 cm superior simphisis pubis\n3) Focus film distance (FFD)   : 100 cm\n4) Faktor eksposi\n\n: 60-65 kVp, 20-25 mAs, grid, film speed\n400"
+    },
+    {
+      "index": 2,
+      "judul": "2. Proyeksi Unilateral (Frog-Leg)",
+      "pages": [
+        5
+      ],
+      "text": "2. Proyeksi Unilateral (Frog-Leg)\na. Posisi pasien (PP)\nSupine, kedua tangan diletakan di dada, beri bantalan pada kepala,pastikan hip yang\nsakit tercover pada kaset\nb. Posisi objek (PO)\n Fleksi knee dan hip joint yang sakit\n Abduksi femur 45  dari arah vertikal\n Atur Femoral Neck pada pertengahan kaset\n Beri sandbag untuk fiksasi kaki\nc. Pengaturan sinar dan eksposi :\n1) Arah sinar/central ray (CR)  : tegak lurus kaset pada mid femoralneck\n2) Titik bidik/central point (CP) : mid femoralneck\n3) Focus film distance (FFD)   : 100 cm\n4) Faktor eksposi\n\n: 55-65 kVp, 10-12 mAs, grid/non grid, film\nspeed 400"
+    }
+  ],
+  "rawPages": [
+    {
+      "page": 1,
+      "text": "PEDOMAN PRAKTEK LABORATORIUM\n\nTEKNIK RADIOGRAFI 1\nSIMULASI / ROLE PLAY  9B\nPokok Bahasan :\nTEKNIK RADIOGRAFI COLLUM FEMORIS\n\nJURUSAN TEKNIK RADIODIAGNOSTIK DAN RADIOTERAPI\nPOLTEKKES KEMENKES SEMARANG"
+    },
+    {
+      "page": 2,
+      "text": "SIMULASI 9B\nTEKNIK RADIOGRAFI COLLUM FEMORIS\n\nA. Kompetensi :\nMahasiswa  melakukan teknik radiografi Collum femoris dengan baik dan benar : simulasi,\nrole play, realplay\n\nB. Administrasi pemeriksaan radiografi\n1. Lembar permintaan pemeriksaan radiografi\na. Pasien datang dengan lembar permintaan pemeriksaan radiografi\nb. Form berisi tentang :\n Identitas pasien : nama, umur, alamat, no. catatan medik (CM/RM), asal rujukan\n(poli/rajal, ranap, IGD atau dokter praktek)\n Permintaan foto\n Riwayat penyakit\n2. Pendataan pasien pada buku regristrasi dan kelengkapannya\na. Pencatatan identitas pasien ke dalam buku registrasi dan pemberian nomor foto pasien\nyang ditulis juga pada lembar permintaan pasien.\nb. Membuat kartu ambil foto\nc. Membuat amplop foto sesuai dengan film yang digunakan.\n\nC. Pra pemeriksaan\n1. Pemanggilan pasien\na. Memanggil pasien sesuai dengan nama yang ada pada lembar permintaan foto\nb. Mencocokan identitas pasien (nama, umur, alamat) apabila benar pasien dipersilahkan\nmasuk ke dalam ruang pemeriksaan.\nc. Contoh : “Maaf bapak/ibu” nama lengkap bapak/ibu siapa?, Umurnya berapa?,\nAlamatnya dimana?\n2. Perkenalan diri\na. Mahasiswa  memperkenalkan diri dengan memberi salam, menyebutkan nama dan\nunit tugasnya kepada pasien.\nb. Contoh : “Selamat pagi, nama saya Lina, saya mahasiswa  radiologi yang akan\nmelakukan pemeriksaan radiologi kepada bapak/ibu”"
+    },
+    {
+      "page": 3,
+      "text": "3. Anamnase singkat (keluhan pasien dan keadaan umum pasien)\na. Mahasiswa  melihat keadaan umum pasien (datang sendiri, dibantu orang lain, dapat\nberdiri atau menggunakan alat tertentu)\nb. Mahasiswa  menanyakan perihal keluhan yang dirasakan oleh pasien dan posisi yang\nsakit tanpa menyebutkan apa yang tertulis pada lembar permintaan foto. Contoh :\n“Maaf Pak/ibu,bagian mana yang terasa sakit? Kanan atau kiri?”\nc. Mahasiswa  melakukan “recall “ gambaran anatomi normal regio bagian tubuh pasien\nyang akan di periksa secara radiografi mengacu pada informasi kriteria anatomi\nradiologi\nsebagai berikut:"
+    },
+    {
+      "page": 4,
+      "text": "4. Analisa kebutuhan pemeriksaan radiografi\nSetelah selesai anamnase, Mahasiswa  harus dengan segera dapat menentuan kesesuaian\ntindakan radiografi dengan kondisi klinis pasien, yang meliputi : teknik pemeriksaan\nradiografi, proyeksi yang akan digunakan (Proyeksi unilateral frog-leg (kasus non\ntrauma)), persiapan pasien dan alat\n5. Penjelasan ringkas prosedur\nSetelah penentuan tindakan radiografi, pasien diberi penjelasan singkat mengenai apa\nyang akan dilakukan selama pemeriksaan\n6. Persiapan pasien\nPastikan tidak ada benda logam atau benda lain pada daerah yang akan diperiksa.\n7. Persiapan alat\na. Pesawat sinar –x siap pakai\nb. Kaset radiografi dan film ukuran 24x30 cm\nc. Marker, plester dan gunting\nd. Lembar Pb\ne. Meteran\n\nD. Pelaksanaan Pemeriksaan\n1. Proyeksi Bilateral (Frog-Leg)\na. Posisi pasien (PP)\nSupine, kedua tangan diletakan di dada, beri bantalan pada kepala\nb. Posisi objek (PO)\n Atur MSP pada pertengahan bucky table\n Atur pelvis tidak rotasi dengan mengatur kedua SIAS berjarak sama dengan meja\npemeriksaan\n Beri alat bantu untuk menjaga obyek tetap fiksasi\n Hip joint dan kaki flexi atur kaki abduksi 45 derajat\nc. Pengaturan sinar dan eksposi :\n1) Arah sinar/central ray (CR)  : tegak lurus kaset\n2) Titik bidik/central point (CP) : 2,5 cm superior simphisis pubis\n3) Focus film distance (FFD)   : 100 cm\n4) Faktor eksposi\n\n: 60-65 kVp, 20-25 mAs, grid, film speed\n400"
+    },
+    {
+      "page": 5,
+      "text": "2. Proyeksi Unilateral (Frog-Leg)\na. Posisi pasien (PP)\nSupine, kedua tangan diletakan di dada, beri bantalan pada kepala,pastikan hip yang\nsakit tercover pada kaset\nb. Posisi objek (PO)\n Fleksi knee dan hip joint yang sakit\n Abduksi femur 45  dari arah vertikal\n Atur Femoral Neck pada pertengahan kaset\n Beri sandbag untuk fiksasi kaki\nc. Pengaturan sinar dan eksposi :\n1) Arah sinar/central ray (CR)  : tegak lurus kaset pada mid femoralneck\n2) Titik bidik/central point (CP) : mid femoralneck\n3) Focus film distance (FFD)   : 100 cm\n4) Faktor eksposi\n\n: 55-65 kVp, 10-12 mAs, grid/non grid, film\nspeed 400"
+    },
+    {
+      "page": 6,
+      "text": ""
+    },
+    {
+      "page": 7,
+      "text": "E. Proteksi radiasi :\n1. Gunakan gonad shield untuk melindungi organ reproduksi terlindungi dari sinar hambur\n2. Luas Lapangan seluas Obyek\n3. Mempersilahkan orang yang tidak berkepentingan di dalam ruang pemeriksaan untuk\nkeluar ruangan, apabila terpaksa harus ada orang yang mendampingi, maka orang tersebut\nharus dikenakan apron\n\nF. Pasca pemeriksaan\n1. Penanganan pasien setelah pemeriksaan\na. Mahasiswa  membantu pasien turun dari meja pemeriksaan\nb. Memberi arahan untuk menunggu hasil pemprosesan film, apabila hasil sudah baik\nmaka pasien diberi kartu ambil foto.\nc. Dan mempersilahkan pasien untuk kembali ke asal rujukan.\n2. Pemprosesan film\na. Dilakukan di kamar gelap, lampu general dimatikan\nb. Buka kaset, ambil film dan pasang film pada hanger\nc. Tahap developing, masukkan film ke dalam cairan developer hingga muncul\ngambaran laten (4 menit), inspeksi film menggunakan cahaya safety light (jangan\nsering dilakukan)\nd. Bila bayangan laten sudah muncul, lanjutkan dengan tahap rinsing dengan\nmemindahkan film pada tangki yang berisi air.\ne. Lanjutkan dengan tahap fixing dengan memasukkan film pada cairan fixer agar\ngambaran menjadi gambaran tetap.\nf. Pada tahap washing, film di masukkan ke air kemudian dikeringkan film pada mesin\npengering film.\n\nG. Evaluasi radiografi\nStructure shown: the bilateral resulting image shows an AP oblique projection of the femoral\nhead, necks and trochanteric area projected onto one radiograph for comparison.\n\nThe following should be clearly demonstrated:\na) No rotation of the pelvis, as evidenced by a symmetric appearance.\nb) Acetabulum, femoral head, and femoral neck\nc) Lesser trochanter on the medial side of the femur."
+    },
+    {
+      "page": 8,
+      "text": "d) Femoral neck without superimposition by the greater trochanter. Excess abduction\ncauses the greater trochanter to obstruct the neck.\ne) Femoral axes extended from the hip bone at equal angles.\n\nH. Tugas\n1. Gambaran anatomi radiologi\na. Gambarkan anatomi obyek dari organ yang Anda foto!\nb. Sebutkan bagian-bagian dari organ tersebut!\nc. Bandingkan kriteria anatomi radiograf phantom ossa pedis yang telah dibuat, dengan\nstandar kriteria\n2. Evaluasi dan penilaian radiograf\na. Gunakan form evaluasi untuk menilai radiograf yang Anda buat!\n3. Penyusunan laporan praktek\na. Gunakan form laporan untuk menyusun laporan praktek!\nb. Lengkapi laporan dengan referensi, minimal 1 textbook.\nc. Laporan dikumpulkan paling lambat 1 hari setelah selesai praktek."
+    }
+  ]
+}

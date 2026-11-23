@@ -1,0 +1,88 @@
+{
+  "slug": "orientasi",
+  "kode": "301-1",
+  "judul": "Orientasi Laboratorium & Dasar Proyeksi",
+  "region": "dasar",
+  "sourcePdf": "PEDOMAN PRAKTEK RAD 301-1 ORIENTASI.pdf",
+  "pages": 5,
+  "sections": {
+    "A": {
+      "heading": "A. Kompetensi : / A. Kompetensi :",
+      "text": "A. Kompetensi :\nMahasiswa  melakukan penempatan proyeksi dan posisi pemotretan radiografi serta prinsip\nproteksi radiasi\n\nA. Kompetensi :\nMahasiswa  melakukan prinsip – prinsip dasar pemeriksaan radiologi, peralatan dan bahan\npemeriksaan radiologi",
+      "pages": [
+        2,
+        4
+      ]
+    },
+    "B": {
+      "heading": "B. Proyeksi / B. Administrasi pemeriksaan radiografi",
+      "text": "B. Proyeksi\n1. Anterior – posterior (AP) yaitu sinar datang melalui bagian anterior dahulu dan keluar bagian\nposterior\n2. Posterior – anterior (PA) yaitu sinar datang melalui bagian posterior dahulu dan keluar bagian\nposterior\n3. Axial yaitu sinar datang secara menyudut pada bidang longitudinal dengan sudut 10 º atau\nlebih\n4. Tangensial yaitu sinar datang tepat sepanjang tepi luar dari permukaan tubuh\n5. Lateral yaitu sinar datang melalui salah satu sisi tubuh\n6. Oblique yaitu sinar datang dari sisi yang menyudut\n\nB. Administrasi pemeriksaan radiografi\n1. Lembar permintaan pemeriksaan radiografi\na. Pasien datang dengan lembar permintaan pemeriksaan radiografi\nb. Form berisi tentang :\n Identitas pasien : nama, umur, alamat, no. catatan medik (CM/RM), asal rujukan\n(poli/rajal, ranap, IGD atau dokter praktek)\n Permintaan foto\n Riwayat penyakit\n2. Pendataan pasien pada buku registrasi dan kelengkapannya\na. Pencatatan identitas pasien ke dalam buku registrasi dan pemberian nomor foto pasien\nyang ditulis juga pada lembar permintaan pasien.\nb. Membuat kartu ambil foto\nc. Membuat amplop foto sesuai dengan film yang digunakan.",
+      "pages": [
+        2,
+        4
+      ]
+    },
+    "C": {
+      "heading": "C. Posisi pemotretan / C. Pra pemeriksaan",
+      "text": "C. Posisi pemotretan\n1. Berdiri adalah posisi dimana pasien bertumpu pada kedua kakinya\n2. Duduk adalah pasisi dimana pasien duduk dimeja pemeriksaan atau pada kursi yang telah\ndisediakan.\n3. Recumbent adalah posisi dimana pasien berbaring pada meja pemeriksaan\na. Supine – posisi dimana bagian belakang yang menempel\nb. Prone – posisi dimana bagian depan yang menempel\nc. Lateral – posisi dimana salah satu sisi yang menempel\nd. Trendelenburg’s – posisi supine dimana kepala lebih rendah dibandingkan kaki\ne. Fowler – posisi supine dimana kepala lebih tinggi dibandingkan kaki\nf. Sims – posisi lateral dimana kaki yang menempel pada meja lurus dan yang lainnya fleksi\ng. Lithotomy – posisi supine dimana knee dan hip fleksi dan di-abduksikan serta rotasi\neksternal, didukung dengan   kaki\n\nC. Pra pemeriksaan\n1. Pemanggilan pasien\na. Memanggil pasien sesuai dengan nama yang ada pada lembar permintaan foto\nb. Mencocokan identitas pasien (nama, umur, alamat) apabila benar pasien dipersilahkan\nmasuk ke dalam ruang pemeriksaan.\n2. Perkenalan diri\na. Mahasiswa  memperkenalkan diri dengan memberi salam, menyebutkan nama dan unit\ntugasnya kepada pasien.\nb. Contoh : “Selamat pagi, nama saya Ahmad, saya mahasiswa  radiologi yang akan\nmelakukan pemeriksaan radiologi kepada bapak/ibu”\n3. Anamnase singkat (keluhan pasien dan keadaan umum pasien)\na. Mahasiswa  melihat keadaan umum pasien (datang sendiri, dibantu orang lain, dapat\nberdiri atau menggunakan alat tertentu)\n[Type text]\n\nb. Mahasiswa  menanyakan perihal keluhan yang dirasakan oleh pasien dan posisi yang sakit\ntanpa menyebutkan apa yang tertulis pada lembar permintaan foto. Contoh : “Maaf\nPak/ibu,bagian bahu mana yang terasa sakit? Kanan atau kiri? Depan atau belakang?”\nc. Mahasiswa  melakukan “recall “ gambaran anatomi normal regio bagian tubuh pasien\nyang akan di periksa secara radiografi mengacu pada informasi kriteria anatomi radiologi\n4. Analisa kebutuhan pemeriksaan radiografi\nSetelah selesai anamnase, Mahasiswa harus dengan segera dapat menentuan kesesuaian\ntindakan radiografi dengan kondisi klinis pasien, yang meliputi : teknik pemeriksaan\nradiografi, proyeksi yang akan digunakan (AP axial), persiapan pasien dan alat.\n5. Penjelasan ringkas prosedur\nSetelah penentuan tindakan radiografi, pasien diberi penjelasan singkat mengenai apa yang\nakan dilakukan selama pemeriksaan\n6. Persiapan pasien\nPastikan tidak ada benda logam atau benda lain pada bahu yang akan diperiksa, contoh :\nkancing, pin, jarum temiti. Apabila memungkinkan pasien diminta untuk ganti baju dengan\nbaju pasien yang sudah disediakan.\n7. Persiapan alat\na. Pesawat sinar –x siap pakai\nb. Kaset radiografi dan film, hanger ukuran 18x24\nc. Radiographic phantom\nd. Marker, plester dan gunting\ne. Lembar Pb\nf. Meteran\ng. Apron",
+      "pages": [
+        2,
+        4,
+        5
+      ]
+    },
+    "D": {
+      "heading": "D. Pelaksanaan Pemeriksaan",
+      "text": "D. Pelaksanaan Pemeriksaan\nMelakukan pemeriksaan pada pasien dengan proyeksi yang sesuai dengan permintaan foto dari\ndokter pengirim berdasar indikasi / kasus yang diderita oleh pasien",
+      "pages": [
+        5
+      ]
+    },
+    "E": {
+      "heading": "D. Proteksi radiasi : / E. Proteksi radiasi :",
+      "text": "D. Proteksi radiasi :\n1. Gunakan apron untuk menutupi daerah panggul pasien agar organ reproduksi terlindungi dari\nsinar hambur.\n[Type text]\n\n2. Atur luas lapangan seoptimal mungkin, obyek yang diperiksa masuk dalam penyinaran,\nmaksimal seluas lapangan kaset yang digunakan.\n3. Mempersilahkan orang yang tidak berkepentingan di dalam ruang pemeriksaan untuk keluar\nruangan, apabila terpaksa harus ada orang yang mendampingi, maka orang tersebut harus\ndikenakan apron.\n4. Menghindari/tidak melakukan pengulangan foto.\n\nE. Proteksi radiasi :\nMelakukan tindakan proteksi radiasi saat berlangsungnya pemeriksaan pada pasien berdasar\nindikasi / kasus yang diderita oleh pasien",
+      "pages": [
+        2,
+        3,
+        5
+      ]
+    },
+    "F": {
+      "heading": "",
+      "text": "",
+      "pages": []
+    },
+    "G": {
+      "heading": "E. Penyusunan laporan praktek / F. Penyusunan laporan praktek",
+      "text": "E. Penyusunan laporan praktek\n1. Gunakan form laporan untuk menyusun laporan praktek!\n2. Lengkapi laporan dengan referensi, minimal 1 textbook.\n3. Laporan dikumpulkan paling lambat 1 hari setelah selesai praktek.\n[Type text]\n\nSIMULASI 2\nTEKNIK RADIOGRAFI – ORIENTASI LABORAORIUM RADIOGRAFI\n\nPRINSIP – PRINSIP DASAR PEMERIKSAAN RADIOLOGI, PERALATAN DAN BAHAN\nPEMERIKSAAN RADIOLOGI\n\nF. Penyusunan laporan praktek\na. Gunakan form laporan untuk menyusun laporan praktek!\nb. Lengkapi laporan dengan referensi, minimal 1 textbook.\nc. Laporan dikumpulkan paling lambat 1 hari setelah selesai praktek.",
+      "pages": [
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "proyeksi": [],
+  "rawPages": [
+    {
+      "page": 1,
+      "text": "[Type text]\n\nMODUL PRAKTEK LABORATORIUM\n\nTEKNIK RADIOGRAFI 1\nSIMULASI / ROLE PLAY\nOrientasi laboratorium radiografi -1\n\nJURUSAN TEKNIK RADIODIAGNOSTIK DAN RADIOTERAPI\nPOLTEKKES KEMENKES SEMARANG"
+    },
+    {
+      "page": 2,
+      "text": "[Type text]\n\nSIMULASI 1\nTEKNIK RADIOGRAFI – ORIENTASI LABORAORIUM RADIOGRAFI\nPROYEKSI DAN POSISI PEMOTRETAN RADIOGRAFI\nSERTA PRINSIP PROTEKSI RADIASI\nA. Kompetensi :\nMahasiswa  melakukan penempatan proyeksi dan posisi pemotretan radiografi serta prinsip\nproteksi radiasi\n\nB. Proyeksi\n1. Anterior – posterior (AP) yaitu sinar datang melalui bagian anterior dahulu dan keluar bagian\nposterior\n2. Posterior – anterior (PA) yaitu sinar datang melalui bagian posterior dahulu dan keluar bagian\nposterior\n3. Axial yaitu sinar datang secara menyudut pada bidang longitudinal dengan sudut 10 º atau\nlebih\n4. Tangensial yaitu sinar datang tepat sepanjang tepi luar dari permukaan tubuh\n5. Lateral yaitu sinar datang melalui salah satu sisi tubuh\n6. Oblique yaitu sinar datang dari sisi yang menyudut\n\nC. Posisi pemotretan\n1. Berdiri adalah posisi dimana pasien bertumpu pada kedua kakinya\n2. Duduk adalah pasisi dimana pasien duduk dimeja pemeriksaan atau pada kursi yang telah\ndisediakan.\n3. Recumbent adalah posisi dimana pasien berbaring pada meja pemeriksaan\na. Supine – posisi dimana bagian belakang yang menempel\nb. Prone – posisi dimana bagian depan yang menempel\nc. Lateral – posisi dimana salah satu sisi yang menempel\nd. Trendelenburg’s – posisi supine dimana kepala lebih rendah dibandingkan kaki\ne. Fowler – posisi supine dimana kepala lebih tinggi dibandingkan kaki\nf. Sims – posisi lateral dimana kaki yang menempel pada meja lurus dan yang lainnya fleksi\ng. Lithotomy – posisi supine dimana knee dan hip fleksi dan di-abduksikan serta rotasi\neksternal, didukung dengan   kaki\n\nD. Proteksi radiasi :\n1. Gunakan apron untuk menutupi daerah panggul pasien agar organ reproduksi terlindungi dari\nsinar hambur."
+    },
+    {
+      "page": 3,
+      "text": "[Type text]\n\n2. Atur luas lapangan seoptimal mungkin, obyek yang diperiksa masuk dalam penyinaran,\nmaksimal seluas lapangan kaset yang digunakan.\n3. Mempersilahkan orang yang tidak berkepentingan di dalam ruang pemeriksaan untuk keluar\nruangan, apabila terpaksa harus ada orang yang mendampingi, maka orang tersebut harus\ndikenakan apron.\n4. Menghindari/tidak melakukan pengulangan foto.\n\nE. Penyusunan laporan praktek\n1. Gunakan form laporan untuk menyusun laporan praktek!\n2. Lengkapi laporan dengan referensi, minimal 1 textbook.\n3. Laporan dikumpulkan paling lambat 1 hari setelah selesai praktek."
+    },
+    {
+      "page": 4,
+      "text": "[Type text]\n\nSIMULASI 2\nTEKNIK RADIOGRAFI – ORIENTASI LABORAORIUM RADIOGRAFI\n\nPRINSIP – PRINSIP DASAR PEMERIKSAAN RADIOLOGI, PERALATAN DAN BAHAN\nPEMERIKSAAN RADIOLOGI\nA. Kompetensi :\nMahasiswa  melakukan prinsip – prinsip dasar pemeriksaan radiologi, peralatan dan bahan\npemeriksaan radiologi\nB. Administrasi pemeriksaan radiografi\n1. Lembar permintaan pemeriksaan radiografi\na. Pasien datang dengan lembar permintaan pemeriksaan radiografi\nb. Form berisi tentang :\n Identitas pasien : nama, umur, alamat, no. catatan medik (CM/RM), asal rujukan\n(poli/rajal, ranap, IGD atau dokter praktek)\n Permintaan foto\n Riwayat penyakit\n2. Pendataan pasien pada buku registrasi dan kelengkapannya\na. Pencatatan identitas pasien ke dalam buku registrasi dan pemberian nomor foto pasien\nyang ditulis juga pada lembar permintaan pasien.\nb. Membuat kartu ambil foto\nc. Membuat amplop foto sesuai dengan film yang digunakan.\n\nC. Pra pemeriksaan\n1. Pemanggilan pasien\na. Memanggil pasien sesuai dengan nama yang ada pada lembar permintaan foto\nb. Mencocokan identitas pasien (nama, umur, alamat) apabila benar pasien dipersilahkan\nmasuk ke dalam ruang pemeriksaan.\n2. Perkenalan diri\na. Mahasiswa  memperkenalkan diri dengan memberi salam, menyebutkan nama dan unit\ntugasnya kepada pasien.\nb. Contoh : “Selamat pagi, nama saya Ahmad, saya mahasiswa  radiologi yang akan\nmelakukan pemeriksaan radiologi kepada bapak/ibu”\n3. Anamnase singkat (keluhan pasien dan keadaan umum pasien)\na. Mahasiswa  melihat keadaan umum pasien (datang sendiri, dibantu orang lain, dapat\nberdiri atau menggunakan alat tertentu)"
+    },
+    {
+      "page": 5,
+      "text": "[Type text]\n\nb. Mahasiswa  menanyakan perihal keluhan yang dirasakan oleh pasien dan posisi yang sakit\ntanpa menyebutkan apa yang tertulis pada lembar permintaan foto. Contoh : “Maaf\nPak/ibu,bagian bahu mana yang terasa sakit? Kanan atau kiri? Depan atau belakang?”\nc. Mahasiswa  melakukan “recall “ gambaran anatomi normal regio bagian tubuh pasien\nyang akan di periksa secara radiografi mengacu pada informasi kriteria anatomi radiologi\n4. Analisa kebutuhan pemeriksaan radiografi\nSetelah selesai anamnase, Mahasiswa harus dengan segera dapat menentuan kesesuaian\ntindakan radiografi dengan kondisi klinis pasien, yang meliputi : teknik pemeriksaan\nradiografi, proyeksi yang akan digunakan (AP axial), persiapan pasien dan alat.\n5. Penjelasan ringkas prosedur\nSetelah penentuan tindakan radiografi, pasien diberi penjelasan singkat mengenai apa yang\nakan dilakukan selama pemeriksaan\n6. Persiapan pasien\nPastikan tidak ada benda logam atau benda lain pada bahu yang akan diperiksa, contoh :\nkancing, pin, jarum temiti. Apabila memungkinkan pasien diminta untuk ganti baju dengan\nbaju pasien yang sudah disediakan.\n7. Persiapan alat\na. Pesawat sinar –x siap pakai\nb. Kaset radiografi dan film, hanger ukuran 18x24\nc. Radiographic phantom\nd. Marker, plester dan gunting\ne. Lembar Pb\nf. Meteran\ng. Apron\n\nD. Pelaksanaan Pemeriksaan\nMelakukan pemeriksaan pada pasien dengan proyeksi yang sesuai dengan permintaan foto dari\ndokter pengirim berdasar indikasi / kasus yang diderita oleh pasien\nE. Proteksi radiasi :\nMelakukan tindakan proteksi radiasi saat berlangsungnya pemeriksaan pada pasien berdasar\nindikasi / kasus yang diderita oleh pasien\nF. Penyusunan laporan praktek\na. Gunakan form laporan untuk menyusun laporan praktek!\nb. Lengkapi laporan dengan referensi, minimal 1 textbook.\nc. Laporan dikumpulkan paling lambat 1 hari setelah selesai praktek."
+    }
+  ]
+}

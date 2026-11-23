@@ -1,0 +1,116 @@
+{
+  "slug": "patella",
+  "kode": "301-8B",
+  "judul": "Os Patella",
+  "region": "ekstremitas-bawah",
+  "sourcePdf": "PEDOMAN PRAKTEK RAD 301-8B Patella.pdf",
+  "pages": 8,
+  "sections": {
+    "A": {
+      "heading": "A. Kompetensi :",
+      "text": "A. Kompetensi :\nMahasiswa  melakukan teknik radiografi patela dengan baik dan benar : simulasi, role play,\nrealplay.",
+      "pages": [
+        2
+      ]
+    },
+    "B": {
+      "heading": "B. Administrasi pemeriksaan radiografi",
+      "text": "B. Administrasi pemeriksaan radiografi\n1. Lembar permintaan pemeriksaan radiografi\na. Pasien datang dengan lembar permintaan pemeriksaan radiografi\nb. Form berisi tentang :\n Identitas pasien : nama, umur, alamat, no. catatan medik (CM/RM), asal rujukan\n(poli/rajal, ranap, IGD atau dokter praktek)\n Permintaan foto\n Riwayat penyakit\n2. Pendataan pasien pada buku registrasi dan kelengkapannya\na. Pencatatan identitas pasien ke dalam buku registrasi dan pemberian nomor foto pasien\nyang ditulis juga pada lembar permintaan pasien.\nb. Membuat kartu ambil foto\nc. Membuat amplop foto sesuai dengan film yang digunakan.",
+      "pages": [
+        2
+      ]
+    },
+    "C": {
+      "heading": "C. Pra pemeriksaan",
+      "text": "C. Pra pemeriksaan\n1. Pemanggilan pasien\na. Memanggil pasien sesuai dengan nama yang ada pada lembar permintaan foto\nb. Mencocokan identitas pasien (nama, umur, alamat) apabila benar pasien dipersilahkan\nmasuk ke dalam ruang pemeriksaan.\nc. Contoh : “Maaf bapak/ibu” nama lengkap bapak/ibu siapa?, Umurnya berapa?,\nAlamatnya dimana?\n2. Perkenalan diri\na. Mahasiswa  memperkenalkan diri dengan memberi salam, menyebutkan nama dan\nunit tugasnya kepada pasien.\nb. Contoh : “Selamat pagi, nama saya Ahmad, saya mahasiswa  radiologi yang akan\nmelakukan pemeriksaan radiologi kepada bapak/ibu”\n3. Anamnase singkat (keluhan pasien dan keadaan umum pasien)\na. Mahasiswa  melihat keadaan umum pasien (datang sendiri, dibantu orang lain, dapat\nberdiri atau menggunakan alat tertentu)\nb. Mahasiswa  menanyakan perihal keluhan yang dirasakan oleh pasien dan posisi yang\nsakit tanpa menyebutkan apa yang tertulis pada lembar permintaan foto. Contoh :\n“Maaf Pak/ibu,bagian lutut mana yang terasa sakit? Kanan atau kiri?”\nc. Mahasiswa  melakukan “recall “ gambaran anatomi normal regio bagian tubuh pasien\nyang akan di periksa secara radiografi mengacu pada informasi kriteria anatomi\nradiologi sebagai berikut:\n\n4. Analisa kebutuhan pemeriksaan radiografi\nSetelah selesai anamnase, Mahasiswa harus dengan segera dapat menentuan kesesuaian\ntindakan radiografi dengan kondisi klinis pasien, yang meliputi : teknik pemeriksaan\nradiografi, proyeksi yang akan digunakan (Tangential dan lateral), persiapan pasien dan\nalat.\n5. Penjelasan ringkas prosedur\nSetelah penentuan tindakan radiografi, pasien diberi penjelasan singkat mengenai apa\nyang akan dilakukan selama pemeriksaan\n6. Persiapan pasien\nPastikan tidak ada benda logam atau benda lain pada kaki yang akan diperiksa, contoh :\ngelang kaki, celana panjang yang tebal\n7. Persiapan alat\na. Pesawat sinar –x siap pakai\nb. Kaset radiografi dan film, hanger ukuran 24x30 cm\nc. Radiographic phantom\nd. Marker, plester dan gunting\ne. Lembar Pb\nf. Meteran\ng. Apron\nh. Softbag dan sandbag",
+      "pages": [
+        2,
+        3,
+        4
+      ]
+    },
+    "D": {
+      "heading": "D. Pelaksanaan Pemeriksaan",
+      "text": "D. Pelaksanaan Pemeriksaan\n1. Proyeksi Tangential (Metode Hughston)\na. Posisi pasien (PP)\nPasien prone dengan kaki yang akan diperiksa diatas meja pemeriksaan.  Atur tubuh\ntidak rotasi\nb. Posisi objek (PO)\n1) Letakkan IR dibawah knee, secara perlahan knee  difleksikan sehingga tibia dan\nfibula membentuk sudut 50 – 60 derajat  terhadap meja pemeriksaan\n2) Kaki biar rilek diletakkan di atas kolimator atau pertahankan posisi kaki tetap pada\nposisi\nc. Pengaturan sinar dan eksposi :\n1) Arah sinar/central ray (CR)\n: 45 derajat chephalad\n2) Titik bidik/central point (CP)  : melalui patellofemoral joint\n3) Focus film distance (FFD)\n: 100 cm\n4) Faktor eksposi\n: 55-65 kVp, 8 mAs, non grid, film speed 400\n2. Proyeksi lateral\na. Posisi pasien (PP)\nPasien diposisikan recumbent lateral. Usahakan agar pasien nyaman dan tidak\nmerasakan sakit.\nb. Posisi objek (PO)\n1) Atur hip yang akan diperiksa dekat meja pemeriksaan. Bila perlu beri sandbag di\nbawah ankle.\n2) Kaki yang tidak diperiksa fleksi dengan knee dan hip diletakkan kedepan kaki\nyang diperiksa untuk menjaga kesetabilan posisi\n3) Fleksikan knee yang diperiksa sekitar 5° sampai 10°.\n4) Atur knee pada posisi lateral (epicondylus femoral superimposisi dan patella tegak\nlurus terhadap IR)\nc. Pengaturan sinar :\n1) Arah sinar/central ray (CR)\n: vertical tegak lurus terhadap kaset\n2) Titik bidik/central point (CP)\n: berada pada midpatellofemoral joint\n3) Focus film distance (FFD)\n\n: 100 cm\n4) Faktor eksposi\n\n           : 50-55 kVp, 8 mAs, non grid, film speed 400",
+      "pages": [
+        4,
+        5
+      ]
+    },
+    "E": {
+      "heading": "E. Proteksi radiasi :",
+      "text": "E. Proteksi radiasi :\n1. Gunakan apron untuk menutupi daerah panggul pasien agar organ reproduksi terlindungi\ndari sinar hambur.\n2. Atur luas lapangan seoptimal mungkin, obyek yang diperiksa masuk dalam penyinaran,\nmaksimal seluas lapangan kaset yang digunakan.\n3. Beri arahan kepada pasien agar pandangan mata menjauh dari sumber sinar-x.\n4. Mempersilahkan orang yang tidak berkepentingan di dalam ruang pemeriksaan untuk\nkeluar ruangan, apabila terpaksa harus ada orang yang mendampingi, maka orang tersebut\nharus dikenakan apron.\n5. Menghindari/tidak melakukan pengulangan foto.",
+      "pages": [
+        7
+      ]
+    },
+    "F": {
+      "heading": "F. Pasca pemeriksaan",
+      "text": "F. Pasca pemeriksaan\n1. Pemberian identitas radiografi\na. Berilah identitas radiografi dengan menuliskan: nama unit radiologi, nomor registrasi,\nnama pasien, umur, jenis kelamin, jenis pemeriksaan, tanggal pemeriksaan pada kertas\nyang tersedia.\nb. Masukkan kertas tersebut pada ID camera.\n2. Pemprosesan film\na. Dilakukan di kamar gelap, lampu general dimatikan\nb. Buka kaset dan pasang film pada hanger\nc. Masukkan film ke dalam cairan developer hingga muncul gambaran laten (4 menit)\ndengan cara menginspeksi film menggunakan cahaya safety light (jangan sering\ndilakukan)\nd. Bila bayangan laten telah muncul, film dimasukkan pada tangki rinshing kemudian\nmasukkan film pada cairan fixer agar gambaran menjadi gambaran tetap.\ne. Kemudian masukkan film pada tangki washing dan keringkan pada mesin pengering.\n3. Penanganan pasien setelah pemeriksaan\na. Memberi arahan untuk menunggu hasil pemprosesan film.\nb. Mempersilakan pasien untuk melepas baju pasien dan memakai bajunya kembali.\nc. Apabila hasil sudah baik maka pasien diberi kartu ambil foto.\nd. Mempersilahkan pasien untuk kembali ke asal rujukan.",
+      "pages": [
+        7
+      ]
+    },
+    "G": {
+      "heading": "3. Evaluasi radiograf / G. Tugas",
+      "text": "3. Evaluasi radiograf\na. Proyeksi Tangential\nThe following should be clearly demonstrated:\n Patella in profile\n Open patellofemoral articulation\n Surfaces of the femoral condyles\n Soft tissue of the femoropatellar articulation\n Bony recorded detail on the patella and femoral condyles\n4. Patela tangetial\na. Proyeksi Lateral\nThe following should be clearly demonstrated:\n Knee flexed 5 to 10 degrees\n Open patellofemoral joint space\n Patella in lateral profile\n Close collimation\n\nG. Tugas\n1. Gambaran anatomi radiologi\na. Gambarkan anatomi obyek dari organ yang Anda foto!\nb. Sebutkan bagian-bagian dari organ tersebut!\nc. Bandingkan kriteria anatomi radiograf phantom ossa pedis yang telah dibuat, dengan\nstandar kriteria\n2. Evaluasi dan penilaian radiograf\na. Gunakan form evaluasi untuk menilai radiograf yang Anda buat!\n3. Penyusunan laporan praktek\na. Gunakan form laporan untuk menyusun laporan praktek!\nb. Lengkapi laporan dengan referensi, minimal 1 textbook.\nc. Laporan dikumpulkan paling lambat 1 hari setelah selesai praktek.",
+      "pages": [
+        5,
+        6,
+        8
+      ]
+    }
+  },
+  "proyeksi": [
+    {
+      "index": 1,
+      "judul": "1. Proyeksi Tangential (Metode Hughston)",
+      "pages": [
+        4
+      ],
+      "text": "1. Proyeksi Tangential (Metode Hughston)\na. Posisi pasien (PP)\nPasien prone dengan kaki yang akan diperiksa diatas meja pemeriksaan.  Atur tubuh\ntidak rotasi\nb. Posisi objek (PO)\n1) Letakkan IR dibawah knee, secara perlahan knee  difleksikan sehingga tibia dan\nfibula membentuk sudut 50 – 60 derajat  terhadap meja pemeriksaan\n2) Kaki biar rilek diletakkan di atas kolimator atau pertahankan posisi kaki tetap pada\nposisi\nc. Pengaturan sinar dan eksposi :\n1) Arah sinar/central ray (CR)\n: 45 derajat chephalad\n2) Titik bidik/central point (CP)  : melalui patellofemoral joint\n3) Focus film distance (FFD)\n: 100 cm\n4) Faktor eksposi\n: 55-65 kVp, 8 mAs, non grid, film speed 400"
+    },
+    {
+      "index": 2,
+      "judul": "2. Proyeksi lateral",
+      "pages": [
+        5
+      ],
+      "text": "2. Proyeksi lateral\na. Posisi pasien (PP)\nPasien diposisikan recumbent lateral. Usahakan agar pasien nyaman dan tidak\nmerasakan sakit.\nb. Posisi objek (PO)\n1) Atur hip yang akan diperiksa dekat meja pemeriksaan. Bila perlu beri sandbag di\nbawah ankle.\n2) Kaki yang tidak diperiksa fleksi dengan knee dan hip diletakkan kedepan kaki\nyang diperiksa untuk menjaga kesetabilan posisi\n3) Fleksikan knee yang diperiksa sekitar 5° sampai 10°.\n4) Atur knee pada posisi lateral (epicondylus femoral superimposisi dan patella tegak\nlurus terhadap IR)\nc. Pengaturan sinar :\n1) Arah sinar/central ray (CR)\n: vertical tegak lurus terhadap kaset\n2) Titik bidik/central point (CP)\n: berada pada midpatellofemoral joint\n3) Focus film distance (FFD)\n\n: 100 cm\n4) Faktor eksposi\n\n           : 50-55 kVp, 8 mAs, non grid, film speed 400"
+    }
+  ],
+  "rawPages": [
+    {
+      "page": 1,
+      "text": "PEDOMAN PRAKTEK LABORATORIUM\nTEKNIK RADIOGRAFI 1\nSIMULASI / ROLE PLAY  8B\nPokok Bahasan :\nTEKNIK RADIOGRAFI PATELA\n\nJURUSAN TEKNIK RADIODIAGNOSTIK DAN RADIOTERAPI\nPOLTEKKES KEMENKES SEMARANG"
+    },
+    {
+      "page": 2,
+      "text": "SIMULASI 8B\nTEKNIK RADIOGRAFI PATELA\n\nA. Kompetensi :\nMahasiswa  melakukan teknik radiografi patela dengan baik dan benar : simulasi, role play,\nrealplay.\n\nB. Administrasi pemeriksaan radiografi\n1. Lembar permintaan pemeriksaan radiografi\na. Pasien datang dengan lembar permintaan pemeriksaan radiografi\nb. Form berisi tentang :\n Identitas pasien : nama, umur, alamat, no. catatan medik (CM/RM), asal rujukan\n(poli/rajal, ranap, IGD atau dokter praktek)\n Permintaan foto\n Riwayat penyakit\n2. Pendataan pasien pada buku registrasi dan kelengkapannya\na. Pencatatan identitas pasien ke dalam buku registrasi dan pemberian nomor foto pasien\nyang ditulis juga pada lembar permintaan pasien.\nb. Membuat kartu ambil foto\nc. Membuat amplop foto sesuai dengan film yang digunakan.\n\nC. Pra pemeriksaan\n1. Pemanggilan pasien\na. Memanggil pasien sesuai dengan nama yang ada pada lembar permintaan foto\nb. Mencocokan identitas pasien (nama, umur, alamat) apabila benar pasien dipersilahkan\nmasuk ke dalam ruang pemeriksaan.\nc. Contoh : “Maaf bapak/ibu” nama lengkap bapak/ibu siapa?, Umurnya berapa?,\nAlamatnya dimana?\n2. Perkenalan diri\na. Mahasiswa  memperkenalkan diri dengan memberi salam, menyebutkan nama dan\nunit tugasnya kepada pasien.\nb. Contoh : “Selamat pagi, nama saya Ahmad, saya mahasiswa  radiologi yang akan\nmelakukan pemeriksaan radiologi kepada bapak/ibu”"
+    },
+    {
+      "page": 3,
+      "text": "3. Anamnase singkat (keluhan pasien dan keadaan umum pasien)\na. Mahasiswa  melihat keadaan umum pasien (datang sendiri, dibantu orang lain, dapat\nberdiri atau menggunakan alat tertentu)\nb. Mahasiswa  menanyakan perihal keluhan yang dirasakan oleh pasien dan posisi yang\nsakit tanpa menyebutkan apa yang tertulis pada lembar permintaan foto. Contoh :\n“Maaf Pak/ibu,bagian lutut mana yang terasa sakit? Kanan atau kiri?”\nc. Mahasiswa  melakukan “recall “ gambaran anatomi normal regio bagian tubuh pasien\nyang akan di periksa secara radiografi mengacu pada informasi kriteria anatomi\nradiologi sebagai berikut:\n\n4. Analisa kebutuhan pemeriksaan radiografi\nSetelah selesai anamnase, Mahasiswa harus dengan segera dapat menentuan kesesuaian\ntindakan radiografi dengan kondisi klinis pasien, yang meliputi : teknik pemeriksaan\nradiografi, proyeksi yang akan digunakan (Tangential dan lateral), persiapan pasien dan\nalat.\n5. Penjelasan ringkas prosedur\nSetelah penentuan tindakan radiografi, pasien diberi penjelasan singkat mengenai apa\nyang akan dilakukan selama pemeriksaan\n6. Persiapan pasien\nPastikan tidak ada benda logam atau benda lain pada kaki yang akan diperiksa, contoh :\ngelang kaki, celana panjang yang tebal"
+    },
+    {
+      "page": 4,
+      "text": "7. Persiapan alat\na. Pesawat sinar –x siap pakai\nb. Kaset radiografi dan film, hanger ukuran 24x30 cm\nc. Radiographic phantom\nd. Marker, plester dan gunting\ne. Lembar Pb\nf. Meteran\ng. Apron\nh. Softbag dan sandbag\n\nD. Pelaksanaan Pemeriksaan\n1. Proyeksi Tangential (Metode Hughston)\na. Posisi pasien (PP)\nPasien prone dengan kaki yang akan diperiksa diatas meja pemeriksaan.  Atur tubuh\ntidak rotasi\nb. Posisi objek (PO)\n1) Letakkan IR dibawah knee, secara perlahan knee  difleksikan sehingga tibia dan\nfibula membentuk sudut 50 – 60 derajat  terhadap meja pemeriksaan\n2) Kaki biar rilek diletakkan di atas kolimator atau pertahankan posisi kaki tetap pada\nposisi\nc. Pengaturan sinar dan eksposi :\n1) Arah sinar/central ray (CR)\n: 45 derajat chephalad\n2) Titik bidik/central point (CP)  : melalui patellofemoral joint\n3) Focus film distance (FFD)\n: 100 cm\n4) Faktor eksposi\n: 55-65 kVp, 8 mAs, non grid, film speed 400"
+    },
+    {
+      "page": 5,
+      "text": "2. Proyeksi lateral\na. Posisi pasien (PP)\nPasien diposisikan recumbent lateral. Usahakan agar pasien nyaman dan tidak\nmerasakan sakit.\nb. Posisi objek (PO)\n1) Atur hip yang akan diperiksa dekat meja pemeriksaan. Bila perlu beri sandbag di\nbawah ankle.\n2) Kaki yang tidak diperiksa fleksi dengan knee dan hip diletakkan kedepan kaki\nyang diperiksa untuk menjaga kesetabilan posisi\n3) Fleksikan knee yang diperiksa sekitar 5° sampai 10°.\n4) Atur knee pada posisi lateral (epicondylus femoral superimposisi dan patella tegak\nlurus terhadap IR)\nc. Pengaturan sinar :\n1) Arah sinar/central ray (CR)\n: vertical tegak lurus terhadap kaset\n2) Titik bidik/central point (CP)\n: berada pada midpatellofemoral joint\n3) Focus film distance (FFD)\n\n: 100 cm\n4) Faktor eksposi\n\n           : 50-55 kVp, 8 mAs, non grid, film speed 400\n\n3. Evaluasi radiograf\na. Proyeksi Tangential\nThe following should be clearly demonstrated:\n Patella in profile\n Open patellofemoral articulation\n Surfaces of the femoral condyles\n Soft tissue of the femoropatellar articulation\n Bony recorded detail on the patella and femoral condyles"
+    },
+    {
+      "page": 6,
+      "text": "4. Patela tangetial\na. Proyeksi Lateral\nThe following should be clearly demonstrated:\n Knee flexed 5 to 10 degrees\n Open patellofemoral joint space\n Patella in lateral profile\n Close collimation"
+    },
+    {
+      "page": 7,
+      "text": "E. Proteksi radiasi :\n1. Gunakan apron untuk menutupi daerah panggul pasien agar organ reproduksi terlindungi\ndari sinar hambur.\n2. Atur luas lapangan seoptimal mungkin, obyek yang diperiksa masuk dalam penyinaran,\nmaksimal seluas lapangan kaset yang digunakan.\n3. Beri arahan kepada pasien agar pandangan mata menjauh dari sumber sinar-x.\n4. Mempersilahkan orang yang tidak berkepentingan di dalam ruang pemeriksaan untuk\nkeluar ruangan, apabila terpaksa harus ada orang yang mendampingi, maka orang tersebut\nharus dikenakan apron.\n5. Menghindari/tidak melakukan pengulangan foto.\n\nF. Pasca pemeriksaan\n1. Pemberian identitas radiografi\na. Berilah identitas radiografi dengan menuliskan: nama unit radiologi, nomor registrasi,\nnama pasien, umur, jenis kelamin, jenis pemeriksaan, tanggal pemeriksaan pada kertas\nyang tersedia.\nb. Masukkan kertas tersebut pada ID camera.\n2. Pemprosesan film\na. Dilakukan di kamar gelap, lampu general dimatikan\nb. Buka kaset dan pasang film pada hanger\nc. Masukkan film ke dalam cairan developer hingga muncul gambaran laten (4 menit)\ndengan cara menginspeksi film menggunakan cahaya safety light (jangan sering\ndilakukan)\nd. Bila bayangan laten telah muncul, film dimasukkan pada tangki rinshing kemudian\nmasukkan film pada cairan fixer agar gambaran menjadi gambaran tetap.\ne. Kemudian masukkan film pada tangki washing dan keringkan pada mesin pengering.\n3. Penanganan pasien setelah pemeriksaan\na. Memberi arahan untuk menunggu hasil pemprosesan film.\nb. Mempersilakan pasien untuk melepas baju pasien dan memakai bajunya kembali.\nc. Apabila hasil sudah baik maka pasien diberi kartu ambil foto.\nd. Mempersilahkan pasien untuk kembali ke asal rujukan."
+    },
+    {
+      "page": 8,
+      "text": "G. Tugas\n1. Gambaran anatomi radiologi\na. Gambarkan anatomi obyek dari organ yang Anda foto!\nb. Sebutkan bagian-bagian dari organ tersebut!\nc. Bandingkan kriteria anatomi radiograf phantom ossa pedis yang telah dibuat, dengan\nstandar kriteria\n2. Evaluasi dan penilaian radiograf\na. Gunakan form evaluasi untuk menilai radiograf yang Anda buat!\n3. Penyusunan laporan praktek\na. Gunakan form laporan untuk menyusun laporan praktek!\nb. Lengkapi laporan dengan referensi, minimal 1 textbook.\nc. Laporan dikumpulkan paling lambat 1 hari setelah selesai praktek."
+    }
+  ]
+}

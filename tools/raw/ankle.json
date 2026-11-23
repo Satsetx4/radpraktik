@@ -1,0 +1,122 @@
+{
+  "slug": "ankle",
+  "kode": "301-7A",
+  "judul": "Ankle Joint",
+  "region": "ekstremitas-bawah",
+  "sourcePdf": "PEDOMAN PRAKTEK RAD 301-7A ANKLE JOINT.pdf",
+  "pages": 9,
+  "sections": {
+    "A": {
+      "heading": "A. Kompetensi :",
+      "text": "A. Kompetensi :\nMahasiswa  melakukan teknik radiografi ankle joint  dengan baik dan benar : simulasi, role\nplay, realplay.",
+      "pages": [
+        2
+      ]
+    },
+    "B": {
+      "heading": "B. Administrasi pemeriksaan radiografi",
+      "text": "B. Administrasi pemeriksaan radiografi\n1. Lembar permintaan pemeriksaan radiografi\na. Pasien datang dengan lembar permintaan pemeriksaan radiografi\nb. Form berisi tentang :\n Identitas pasien : nama, umur, alamat, no. catatan medik (CM/RM), asal rujukan\n(poli/rajal, ranap, IGD atau dokter praktek)\n Permintaan foto\n Riwayat penyakit\n2. Pendataan pasien pada buku registrasi dan kelengkapannya\na. Pencatatan identitas pasien ke dalam buku registrasi dan pemberian nomor foto pasien\nyang ditulis juga pada lembar permintaan pasien.\nb. Membuat kartu ambil foto\nc. Membuat amplop foto sesuai dengan film yang digunakan.",
+      "pages": [
+        2
+      ]
+    },
+    "C": {
+      "heading": "C. Pra pemeriksaan",
+      "text": "C. Pra pemeriksaan\n1. Pemanggilan pasien\na. Memanggil pasien sesuai dengan nama yang ada pada lembar permintaan foto\nb. Mencocokan identitas pasien (nama, umur, alamat) apabila benar pasien dipersilahkan\nmasuk ke dalam ruang pemeriksaan.\nc. Contoh : “Maaf bapak/ibu” nama lengkap bapak/ibu siapa?, Umurnya berapa?,\nAlamatnya dimana?\n2. Perkenalan diri\na. Mahasiswa  memperkenalkan diri dengan memberi salam, menyebutkan nama dan\nunit tugasnya kepada pasien.\nb. Contoh : “Selamat pagi, nama saya Ahmad, saya mahasiswa  radiologi yang akan\nmelakukan pemeriksaan radiologi kepada bapak/ibu”\n3. Anamnase singkat (keluhan pasien dan keadaan umum pasien)\na. Mahasiswa  melihat keadaan umum pasien (datang sendiri, dibantu orang lain, dapat\nberdiri atau menggunakan alat tertentu)\nb. Mahasiswa  menanyakan perihal keluhan yang dirasakan oleh pasien dan posisi yang\nsakit tanpa menyebutkan apa yang tertulis pada lembar permintaan foto. Contoh :\n“Maaf Pak/ibu,bagian kaki mana yang terasa sakit? Kanan atau kiri?”\nc. Mahasiswa  melakukan “recall “ gambaran anatomi normal regio bagian tubuh pasien\nyang akan di periksa secara radiografi mengacu pada informasi kriteria anatomi\nradiologi sebagai berikut:\n\nAnatomi Ankle joint\n\n4. Analisa kebutuhan pemeriksaan radiografi\nSetelah selesai anamnase, Mahasiswa harus dengan segera dapat menentuan kesesuaian\ntindakan radiografi dengan kondisi klinis pasien, yang meliputi : teknik pemeriksaan\nradiografi, proyeksi yang akan digunakan (AP dan Lateral), persiapan pasien dan alat.\n5. Penjelasan ringkas prosedur\nSetelah penentuan tindakan radiografi, pasien diberi penjelasan singkat mengenai apa\nyang akan dilakukan selama pemeriksaan\n6. Persiapan pasien\nPastikan tidak ada benda logam atau benda lain pada kaki yang akan diperiksa, contoh :\ngelang kaki, celana panjang yang tebal.\n7. Persiapan alat\na. Pesawat sinar –x siap pakai\nb. Kaset radiografi dan film, hanger ukuran 18x24 cm\nc. Radiographic phantom\nd. Marker, plester dan gunting\ne. Lembar Pb\nf. Meteran\ng. Apron\nh. Softbag dan sandbag",
+      "pages": [
+        2,
+        3,
+        4
+      ]
+    },
+    "D": {
+      "heading": "D. Pelaksanaan Pemeriksaan",
+      "text": "D. Pelaksanaan Pemeriksaan\n1. Proyeksi antero posterior (AP)\na. Posisi pasien (PP)\nPasien supine di atas meja pemeriksaan.\nb. Posisi objek (PO)\n1) Atur kaki pasien yang akan diperiksa ekstensi, dan atur agar true AP (rotasi ke\narah medial 5-7o).\n2) Pedis dorsofleksi.\n3) Atur kaki yang lain, knee fleksi dan plantar pedis menempel pada meja\npemeriksaan.\n4) Posisi kaset melintang dibagi 2. Atur pertengahan kedua maleolus pada\npertengahan kaset.\n5) Berilah arahan kepada pasien untuk dalam keadaan rileks untuk menghindari\npergerakan.\nc. Pengaturan sinar dan eksposi :\n1) Arah sinar/central ray (CR)   : vertikal tegak lurus\n2) Titik bidik/central point (CP) : pada pertengahan kedua maleolus\n3) Focus film distance (FFD)   : 100 cm\n4) Faktor eksposi\n : 50-55 kVp, 3-4 mAs, non grid, film speed 300\n2. Proyeksi lateral (arah sinar mediolateral)\na. Posisi pasien (PP)\nPasien supine di atas meja pemeriksaan.\nb. Posisi objek (PO)\n1) Atur kaki yang akan diperiksa dorsofleksi dan knee ekstensi.\n2) Rotasikan kaki 90o ke arah lateral, sehingga ankle joint true lateral.\n3) Gunakan alat bantu fiksasi untuk mempertahankan posisi pasien.\n4) Posisikan kaset pada area yang belum diekspose.\n5) Berilah arahan kepada pasien untuk dalam keadaan rileks untuk menghindari\npergerakan.\nc. Pengaturan sinar :\n1) Arah sinar/central ray (CR)   : vertikal, tegak lurus terhadap kaset\n2) Titik bidik/central point (CP) : maleolus medialis\n3) Focus film distance (FFD)   : 100 cm\n4) Faktor eksposi\n : 52 kVp, 3-4 mAs, non grid, film speed 300",
+      "pages": [
+        4,
+        5
+      ]
+    },
+    "E": {
+      "heading": "3. Proteksi radiasi :",
+      "text": "3. Proteksi radiasi :\na. Gunakan apron untuk menutupi daerah panggul pasien agar organ reproduksi\nterlindungi dari sinar hambur.\nb. Atur luas lapangan seoptimal mungkin, obyek yang diperiksa masuk dalam\npenyinaran, maksimal seluas lapangan kaset yang digunakan.\nc. Mempersilahkan orang yang tidak berkepentingan di dalam ruang pemeriksaan untuk\nkeluar ruangan, apabila terpaksa harus ada orang yang mendampingi, maka orang\ntersebut harus dikenakan apron.\nd. Menghindari/tidak melakukan pengulangan foto.",
+      "pages": [
+        6
+      ]
+    },
+    "F": {
+      "heading": "E. Pasca pemeriksaan",
+      "text": "E. Pasca pemeriksaan\n1. Pemberian identitas radiografi\na. Berilah identitas radiografi dengan menuliskan: nama unit radiologi, nomor registrasi,\nnama pasien, umur, jenis kelamin, jenis pemeriksaan, tanggal pemeriksaan pada kertas\nyang tersedia.\nb. Masukkan kertas tersebut pada ID camera.\n2. Pemprosesan film\na. Dilakukan di kamar gelap, lampu general dimatikan\nb. Buka kaset dan pasang film pada hanger\nc. Masukkan film ke dalam cairan developer hingga muncul gambaran laten (4 menit)\ndengan cara menginspeksi film menggunakan cahaya safety light (jangan sering\ndilakukan)\nd. Bila bayangan laten telah muncul, masukkan film pada tangki rinshing kemudian\nmasukkan film pada cairan fixer agar gambaran menjadi gambaran tetap.\ne. Kemudian masukkan film pada tangki washing dan dikeringkan pada mesin\npengering.\n3. Penanganan pasien setelah pemeriksaan\na. Memberi arahan untuk menunggu hasil pemprosesan film.\nb. Mempersilakan pasien untuk melepas baju pasien dan memakai bajunya kembali.\nc. Apabila hasil sudah baik maka pasien diberi kartu ambil foto.\nd. Mempersilahkan pasien untuk kembali ke asal rujukan.",
+      "pages": [
+        8,
+        9
+      ]
+    },
+    "G": {
+      "heading": "4. Evaluasi Radiograf / F. Tugas",
+      "text": "4. Evaluasi Radiograf\na. Proyeksi AP\nThe following should be clearly demonstrated:\n Tibiotalar joint space\n Ankle joint centered to exposure area\n Normal overlapping of the tibiofibular articulation with the anterior tubercle\nslightly superimposed over the fibula\n Talus slightly overlapping the distal fibula\n No overlapping of the medial talomalleolar articulation\n Medial and lateral malleoli\n Talus with proper density\n Soft tissue\nRadiograf Ankle Joint Proyeksi AP\n\nb. Proyeksi Lateral\nThe following should be clearly demonstrated:\n Ankle joint centered to exposure area\n Tibiotalar joint well visualized, with the medial and lateral talar domes\nsuperimposed\n Fibula over the posterior half of the tibia\n Distal tibia and fibula, talus, and adjacent tarsals\n Density of the ankle sufficient to see the outline of distal portion of the fibula\nRadiograf ankle joint proyeksi lateral (mediolateral)\n\nF. Tugas\n1. Gambaran anatomi radiologi\na. Gambarkan anatomi obyek dari organ yang Anda foto!\nb. Sebutkan bagian-bagian dari organ tersebut!\nc. Bandingkan kriteria anatomi radiograf phantom ossa pedis yang telah dibuat, dengan\nstandar kriteria\n2. Evaluasi dan penilaian radiograf\na. Gunakan form evaluasi untuk menilai radiograf yang Anda buat!\n3. Penyusunan laporan praktek\na. Gunakan form laporan untuk menyusun laporan praktek!\nb. Lengkapi laporan dengan referensi, minimal 1 textbook.\nc. Laporan dikumpulkan paling lambat 1 hari setelah selesai praktek.",
+      "pages": [
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  },
+  "proyeksi": [
+    {
+      "index": 1,
+      "judul": "1. Proyeksi antero posterior (AP)",
+      "pages": [
+        4
+      ],
+      "text": "1. Proyeksi antero posterior (AP)\na. Posisi pasien (PP)\nPasien supine di atas meja pemeriksaan.\nb. Posisi objek (PO)\n1) Atur kaki pasien yang akan diperiksa ekstensi, dan atur agar true AP (rotasi ke\narah medial 5-7o).\n2) Pedis dorsofleksi.\n3) Atur kaki yang lain, knee fleksi dan plantar pedis menempel pada meja\npemeriksaan.\n4) Posisi kaset melintang dibagi 2. Atur pertengahan kedua maleolus pada\npertengahan kaset.\n5) Berilah arahan kepada pasien untuk dalam keadaan rileks untuk menghindari\npergerakan.\nc. Pengaturan sinar dan eksposi :\n1) Arah sinar/central ray (CR)   : vertikal tegak lurus\n2) Titik bidik/central point (CP) : pada pertengahan kedua maleolus\n3) Focus film distance (FFD)   : 100 cm\n4) Faktor eksposi\n : 50-55 kVp, 3-4 mAs, non grid, film speed 300"
+    },
+    {
+      "index": 2,
+      "judul": "2. Proyeksi lateral (arah sinar mediolateral)",
+      "pages": [
+        5
+      ],
+      "text": "2. Proyeksi lateral (arah sinar mediolateral)\na. Posisi pasien (PP)\nPasien supine di atas meja pemeriksaan.\nb. Posisi objek (PO)\n1) Atur kaki yang akan diperiksa dorsofleksi dan knee ekstensi.\n2) Rotasikan kaki 90o ke arah lateral, sehingga ankle joint true lateral.\n3) Gunakan alat bantu fiksasi untuk mempertahankan posisi pasien.\n4) Posisikan kaset pada area yang belum diekspose.\n5) Berilah arahan kepada pasien untuk dalam keadaan rileks untuk menghindari\npergerakan.\nc. Pengaturan sinar :\n1) Arah sinar/central ray (CR)   : vertikal, tegak lurus terhadap kaset\n2) Titik bidik/central point (CP) : maleolus medialis\n3) Focus film distance (FFD)   : 100 cm\n4) Faktor eksposi\n : 52 kVp, 3-4 mAs, non grid, film speed 300"
+    }
+  ],
+  "rawPages": [
+    {
+      "page": 1,
+      "text": "PEDOMAN PRAKTEK LABORATORIUM\nTEKNIK RADIOGRAFI 1\nSIMULASI / ROLE PLAY  7A\nPokok Bahasan :\nTEKNIK RADIOGRAFI ANKLE JOINT\n\nJURUSAN TEKNIK RADIODIAGNOSTIK DAN RADIOTERAPI\nPOLTEKKES KEMENKES SEMARANG"
+    },
+    {
+      "page": 2,
+      "text": "SIMULASI 7A\nTEKNIK RADIOGRAFI ANKLE JOINT\n\nA. Kompetensi :\nMahasiswa  melakukan teknik radiografi ankle joint  dengan baik dan benar : simulasi, role\nplay, realplay.\n\nB. Administrasi pemeriksaan radiografi\n1. Lembar permintaan pemeriksaan radiografi\na. Pasien datang dengan lembar permintaan pemeriksaan radiografi\nb. Form berisi tentang :\n Identitas pasien : nama, umur, alamat, no. catatan medik (CM/RM), asal rujukan\n(poli/rajal, ranap, IGD atau dokter praktek)\n Permintaan foto\n Riwayat penyakit\n2. Pendataan pasien pada buku registrasi dan kelengkapannya\na. Pencatatan identitas pasien ke dalam buku registrasi dan pemberian nomor foto pasien\nyang ditulis juga pada lembar permintaan pasien.\nb. Membuat kartu ambil foto\nc. Membuat amplop foto sesuai dengan film yang digunakan.\n\nC. Pra pemeriksaan\n1. Pemanggilan pasien\na. Memanggil pasien sesuai dengan nama yang ada pada lembar permintaan foto\nb. Mencocokan identitas pasien (nama, umur, alamat) apabila benar pasien dipersilahkan\nmasuk ke dalam ruang pemeriksaan.\nc. Contoh : “Maaf bapak/ibu” nama lengkap bapak/ibu siapa?, Umurnya berapa?,\nAlamatnya dimana?\n2. Perkenalan diri\na. Mahasiswa  memperkenalkan diri dengan memberi salam, menyebutkan nama dan\nunit tugasnya kepada pasien.\nb. Contoh : “Selamat pagi, nama saya Ahmad, saya mahasiswa  radiologi yang akan\nmelakukan pemeriksaan radiologi kepada bapak/ibu”"
+    },
+    {
+      "page": 3,
+      "text": "3. Anamnase singkat (keluhan pasien dan keadaan umum pasien)\na. Mahasiswa  melihat keadaan umum pasien (datang sendiri, dibantu orang lain, dapat\nberdiri atau menggunakan alat tertentu)\nb. Mahasiswa  menanyakan perihal keluhan yang dirasakan oleh pasien dan posisi yang\nsakit tanpa menyebutkan apa yang tertulis pada lembar permintaan foto. Contoh :\n“Maaf Pak/ibu,bagian kaki mana yang terasa sakit? Kanan atau kiri?”\nc. Mahasiswa  melakukan “recall “ gambaran anatomi normal regio bagian tubuh pasien\nyang akan di periksa secara radiografi mengacu pada informasi kriteria anatomi\nradiologi sebagai berikut:\n\nAnatomi Ankle joint\n\n4. Analisa kebutuhan pemeriksaan radiografi\nSetelah selesai anamnase, Mahasiswa harus dengan segera dapat menentuan kesesuaian\ntindakan radiografi dengan kondisi klinis pasien, yang meliputi : teknik pemeriksaan\nradiografi, proyeksi yang akan digunakan (AP dan Lateral), persiapan pasien dan alat.\n5. Penjelasan ringkas prosedur"
+    },
+    {
+      "page": 4,
+      "text": "Setelah penentuan tindakan radiografi, pasien diberi penjelasan singkat mengenai apa\nyang akan dilakukan selama pemeriksaan\n6. Persiapan pasien\nPastikan tidak ada benda logam atau benda lain pada kaki yang akan diperiksa, contoh :\ngelang kaki, celana panjang yang tebal.\n7. Persiapan alat\na. Pesawat sinar –x siap pakai\nb. Kaset radiografi dan film, hanger ukuran 18x24 cm\nc. Radiographic phantom\nd. Marker, plester dan gunting\ne. Lembar Pb\nf. Meteran\ng. Apron\nh. Softbag dan sandbag\n\nD. Pelaksanaan Pemeriksaan\n1. Proyeksi antero posterior (AP)\na. Posisi pasien (PP)\nPasien supine di atas meja pemeriksaan.\nb. Posisi objek (PO)\n1) Atur kaki pasien yang akan diperiksa ekstensi, dan atur agar true AP (rotasi ke\narah medial 5-7o).\n2) Pedis dorsofleksi.\n3) Atur kaki yang lain, knee fleksi dan plantar pedis menempel pada meja\npemeriksaan.\n4) Posisi kaset melintang dibagi 2. Atur pertengahan kedua maleolus pada\npertengahan kaset.\n5) Berilah arahan kepada pasien untuk dalam keadaan rileks untuk menghindari\npergerakan.\nc. Pengaturan sinar dan eksposi :\n1) Arah sinar/central ray (CR)   : vertikal tegak lurus\n2) Titik bidik/central point (CP) : pada pertengahan kedua maleolus\n3) Focus film distance (FFD)   : 100 cm\n4) Faktor eksposi\n : 50-55 kVp, 3-4 mAs, non grid, film speed 300"
+    },
+    {
+      "page": 5,
+      "text": "2. Proyeksi lateral (arah sinar mediolateral)\na. Posisi pasien (PP)\nPasien supine di atas meja pemeriksaan.\nb. Posisi objek (PO)\n1) Atur kaki yang akan diperiksa dorsofleksi dan knee ekstensi.\n2) Rotasikan kaki 90o ke arah lateral, sehingga ankle joint true lateral.\n3) Gunakan alat bantu fiksasi untuk mempertahankan posisi pasien.\n4) Posisikan kaset pada area yang belum diekspose.\n5) Berilah arahan kepada pasien untuk dalam keadaan rileks untuk menghindari\npergerakan.\nc. Pengaturan sinar :\n1) Arah sinar/central ray (CR)   : vertikal, tegak lurus terhadap kaset\n2) Titik bidik/central point (CP) : maleolus medialis\n3) Focus film distance (FFD)   : 100 cm\n4) Faktor eksposi\n : 52 kVp, 3-4 mAs, non grid, film speed 300"
+    },
+    {
+      "page": 6,
+      "text": "3. Proteksi radiasi :\na. Gunakan apron untuk menutupi daerah panggul pasien agar organ reproduksi\nterlindungi dari sinar hambur.\nb. Atur luas lapangan seoptimal mungkin, obyek yang diperiksa masuk dalam\npenyinaran, maksimal seluas lapangan kaset yang digunakan.\nc. Mempersilahkan orang yang tidak berkepentingan di dalam ruang pemeriksaan untuk\nkeluar ruangan, apabila terpaksa harus ada orang yang mendampingi, maka orang\ntersebut harus dikenakan apron.\nd. Menghindari/tidak melakukan pengulangan foto.\n\n4. Evaluasi Radiograf\na. Proyeksi AP\nThe following should be clearly demonstrated:\n Tibiotalar joint space\n Ankle joint centered to exposure area\n Normal overlapping of the tibiofibular articulation with the anterior tubercle\nslightly superimposed over the fibula\n Talus slightly overlapping the distal fibula\n No overlapping of the medial talomalleolar articulation\n Medial and lateral malleoli\n Talus with proper density\n Soft tissue"
+    },
+    {
+      "page": 7,
+      "text": "Radiograf Ankle Joint Proyeksi AP\n\nb. Proyeksi Lateral\nThe following should be clearly demonstrated:\n Ankle joint centered to exposure area\n Tibiotalar joint well visualized, with the medial and lateral talar domes\nsuperimposed\n Fibula over the posterior half of the tibia\n Distal tibia and fibula, talus, and adjacent tarsals\n Density of the ankle sufficient to see the outline of distal portion of the fibula"
+    },
+    {
+      "page": 8,
+      "text": "Radiograf ankle joint proyeksi lateral (mediolateral)\n\nE. Pasca pemeriksaan\n1. Pemberian identitas radiografi\na. Berilah identitas radiografi dengan menuliskan: nama unit radiologi, nomor registrasi,\nnama pasien, umur, jenis kelamin, jenis pemeriksaan, tanggal pemeriksaan pada kertas\nyang tersedia.\nb. Masukkan kertas tersebut pada ID camera.\n2. Pemprosesan film\na. Dilakukan di kamar gelap, lampu general dimatikan\nb. Buka kaset dan pasang film pada hanger"
+    },
+    {
+      "page": 9,
+      "text": "c. Masukkan film ke dalam cairan developer hingga muncul gambaran laten (4 menit)\ndengan cara menginspeksi film menggunakan cahaya safety light (jangan sering\ndilakukan)\nd. Bila bayangan laten telah muncul, masukkan film pada tangki rinshing kemudian\nmasukkan film pada cairan fixer agar gambaran menjadi gambaran tetap.\ne. Kemudian masukkan film pada tangki washing dan dikeringkan pada mesin\npengering.\n3. Penanganan pasien setelah pemeriksaan\na. Memberi arahan untuk menunggu hasil pemprosesan film.\nb. Mempersilakan pasien untuk melepas baju pasien dan memakai bajunya kembali.\nc. Apabila hasil sudah baik maka pasien diberi kartu ambil foto.\nd. Mempersilahkan pasien untuk kembali ke asal rujukan.\n\nF. Tugas\n1. Gambaran anatomi radiologi\na. Gambarkan anatomi obyek dari organ yang Anda foto!\nb. Sebutkan bagian-bagian dari organ tersebut!\nc. Bandingkan kriteria anatomi radiograf phantom ossa pedis yang telah dibuat, dengan\nstandar kriteria\n2. Evaluasi dan penilaian radiograf\na. Gunakan form evaluasi untuk menilai radiograf yang Anda buat!\n3. Penyusunan laporan praktek\na. Gunakan form laporan untuk menyusun laporan praktek!\nb. Lengkapi laporan dengan referensi, minimal 1 textbook.\nc. Laporan dikumpulkan paling lambat 1 hari setelah selesai praktek."
+    }
+  ]
+}
