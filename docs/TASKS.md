@@ -23,7 +23,7 @@ Aturan: ambil **tugas pertama yang belum dicentang**, selesaikan sampai DoD terp
   DoD: validator lolos (30 kasus, sebaran region, cakupan modul).
 - [x] **T10 QA**: Playwright di 360/768/1440 sesuai Verification Plan di PLAN.md (alur modul, alur kasus, refresh mempertahankan progres, tema tanpa kedip, tanpa scroll horizontal, tap target ≥44px, gambar termuat, 404, Reset Data) + checklist 20 pondasi.
   DoD: semua tes lolos; laporan + screenshot di `docs/review/qa.md`.
-- [ ] **T11 Deploy**: proyek Vercel `radpraktik` (scope `sekawan`), `vercel deploy --prod --yes`, `vercel domains add radpraktik.rindia.my.id`, cek HTTPS live + sitemap/robots dapat diakses.
+- [x] **T11 Deploy**: proyek Vercel `radpraktik` (scope `sekawan`), `vercel deploy --prod --yes`, `vercel domains add radpraktik.rindia.my.id`, cek HTTPS live + sitemap/robots dapat diakses.
   DoD: https://radpraktik.rindia.my.id live; walkthrough singkat untuk Ard di `docs/review/walkthrough.md`.
 
 ## Log Serah Terima
@@ -41,3 +41,4 @@ Aturan: ambil **tugas pertama yang belum dicentang**, selesaikan sampai DoD terp
 | 2026-11-23 | t08-vertebra | T08 | Selesai | 4 modul vertebra (`cervical`, `thoracal`, `lumbal`, `sacrum-coccyx`) + 40 soal lolos validator & `tsc --noEmit`. Lanjut: T10 (QA Playwright). |
 | 2026-11-23 | t09-kasus | T09 | Selesai | Kasus `k06`–`k30` (`src/data/kasus.ts`), rangkuman `catatan-konten.md`, dan finalisasi 24/24 modul, 240 soal, 30/30 kasus lolos `npm run validate`, `build`, `test`. Lanjut: T10 (QA Playwright). |
 | 2026-11-23 | qa-deployer | T10 | Selesai | Perbaikan kontras Light Mode (`--on-accent`, `.negatoscope-frame`), Playwright 109/109 lulus di 360/768/1440, audit 20 pondasi & screenshot di `docs/review/qa.md`. Lanjut: T11 (Deploy Vercel). |
+| 2026-11-23 | qa-deployer | T11 | Selesai | Deploy produksi ke proyek Vercel `sekawan/radpraktik`, domain `https://radpraktik.rindia.my.id` live (HTTP 200 di `/`, `/modul/manus`, `/sitemap.xml`, `/robots.txt`, `/favicon.svg`), dan walkthrough di `docs/review/walkthrough.md`. |
