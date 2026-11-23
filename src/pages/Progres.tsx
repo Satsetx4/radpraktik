@@ -1,14 +1,16 @@
 import { AlertCircle, BookOpen, RotateCcw, Trash2, User } from 'lucide-react';
 import { motion, useReducedMotion } from 'motion/react';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AppHeader } from '../components/AppHeader';
 import { RegionBar } from '../components/RegionBar';
 import { ScoreRing } from '../components/ScoreRing';
 import { SeoHead } from '../components/SeoHead';
 import { ALL_KASUS, MODUL_META, REGIONS, getModulsByRegion } from '../data';
-import { TAP_FEEDBACK } from '../lib/motion';
+import { getTransition, TAP_FEEDBACK } from '../lib/motion';
 import { useProgress } from '../lib/progress';
+
+type ModulFilter = 'all' | 'done' | 'todo';
 
 interface ProgresProps {
   onOpenOnboarding: () => void;
@@ -17,12 +19,26 @@ interface ProgresProps {
 export function Progres({ onOpenOnboarding }: ProgresProps) {
   const { progress, resetAll } = useProgress();
   const [confirmReset, setConfirmReset] = useState(false);
+  const [modulFilter, setModulFilter] = useState<ModulFilter>('all');
   const reduced = useReducedMotion();
 
-  const completedModuls = MODUL_META.filter((m) => {
-    const p = progress.modul[m.slug];
-    return p && (p.skorTerbaik !== null || p.dibaca.length >= 3);
-  });
+  const completedModuls = useMemo(
+    () =>
+      MODUL_META.filter((m) => {
+        const p = progress.modul[m.slug];
+        return Boolean(p && (p.skorTerbaik !== null || p.dibaca.length >= 3));
+      }),
+    [progress.modul],
+  );
+
+  const filteredModuls = useMemo(() => {
+    if (modulFilter === 'all') return MODUL_META;
+    return MODUL_META.filter((m) => {
+      const p = progress.modul[m.slug];
+      const isDone = Boolean(p && (p.skorTerbaik !== null || p.dibaca.length >= 3));
+      return modulFilter === 'done' ? isDone : !isDone;
+    });
+  }, [modulFilter, progress.modul]);
 
   const bestScores = Object.values(progress.modul)
     .map((m) => m.skorTerbaik)
@@ -158,6 +174,140 @@ export function Progres({ onOpenOnboarding }: ProgresProps) {
                         <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
                         <span>Ulangi</span>
                       </Link>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </section>
+
+        {/* Rincian Capaian 24 Modul */}
+        <section className="clinical-card rounded-2xl p-5 sm:p-6">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <h2 className="font-display text-lg font-bold text-[var(--text-primary)]">
+              Rincian Capaian 24 Modul
+            </h2>
+            <div className="flex flex-wrap gap-2" role="group" aria-label="Filter capaian modul">
+              <motion.button
+                type="button"
+                whileTap={reduced ? undefined : TAP_FEEDBACK}
+                onClick={() => setModulFilter('all')}
+                className={`min-h-[44px] rounded-xl border px-3.5 text-xs font-medium transition-colors ${
+                  modulFilter === 'all'
+                    ? 'border-[var(--accent-primary)] bg-[var(--accent-primary)]/15 text-[var(--accent-primary)]'
+                    : 'border-[var(--border-subtle)] bg-[var(--bg-muted)]/50 text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
+              >
+                Semua ({MODUL_META.length})
+              </motion.button>
+              <motion.button
+                type="button"
+                whileTap={reduced ? undefined : TAP_FEEDBACK}
+                onClick={() => setModulFilter('done')}
+                className={`min-h-[44px] rounded-xl border px-3.5 text-xs font-medium transition-colors ${
+                  modulFilter === 'done'
+                    ? 'border-[var(--accent-primary)] bg-[var(--accent-primary)]/15 text-[var(--accent-primary)]'
+                    : 'border-[var(--border-subtle)] bg-[var(--bg-muted)]/50 text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
+              >
+                Selesai ({completedModuls.length})
+              </motion.button>
+              <motion.button
+                type="button"
+                whileTap={reduced ? undefined : TAP_FEEDBACK}
+                onClick={() => setModulFilter('todo')}
+                className={`min-h-[44px] rounded-xl border px-3.5 text-xs font-medium transition-colors ${
+                  modulFilter === 'todo'
+                    ? 'border-[var(--accent-primary)] bg-[var(--accent-primary)]/15 text-[var(--accent-primary)]'
+                    : 'border-[var(--border-subtle)] bg-[var(--bg-muted)]/50 text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
+              >
+                Belum Selesai ({MODUL_META.length - completedModuls.length})
+              </motion.button>
+            </div>
+          </div>
+
+          {filteredModuls.length === 0 ? (
+            <div className="mt-4 rounded-xl border border-dashed border-[var(--border-subtle)] p-4 text-sm text-[var(--text-secondary)]">
+              {modulFilter === 'done'
+                ? 'Belum ada modul yang selesai. Mulai baca materi atau kerjakan latihan soal.'
+                : 'Semua 24 modul sudah selesai dipelajari!'}
+            </div>
+          ) : (
+            <ul className="mt-4 space-y-2.5">
+              {filteredModuls.map((meta) => {
+                const modProg = progress.modul[meta.slug];
+                const readCount = modProg?.dibaca.length ?? 0;
+                const readPct = Math.min(100, Math.round((readCount / 4) * 100));
+                const bestScore = modProg?.skorTerbaik ?? null;
+                const attempts = modProg?.percobaan ?? 0;
+
+                const barPct = bestScore !== null ? bestScore : readPct;
+                const barColorClass =
+                  bestScore !== null
+                    ? bestScore >= 70
+                      ? 'bg-[var(--accent-success)]'
+                      : 'bg-[var(--accent-amber)]'
+                    : 'bg-[var(--accent-primary)]/70';
+
+                return (
+                  <li
+                    key={meta.slug}
+                    className="rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-muted)]/40 p-3.5"
+                  >
+                    <div className="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+                      <Link
+                        to={`/modul/${meta.slug}`}
+                        className="inline-flex min-h-[44px] min-w-0 items-center gap-2.5 rounded-lg transition-colors hover:text-[var(--accent-primary)]"
+                      >
+                        <span className="shrink-0 rounded-md border border-[var(--border-subtle)] bg-[var(--bg-elevated)] px-2 py-0.5 font-mono text-xs text-[var(--accent-primary)]">
+                          {meta.kode}
+                        </span>
+                        <span className="font-display text-sm font-semibold leading-snug text-[var(--text-primary)]">
+                          {meta.judul}
+                        </span>
+                      </Link>
+
+                      <div className="flex shrink-0 flex-wrap items-center gap-2 font-mono text-xs">
+                        <span className="text-[var(--text-secondary)]">{readCount}/4 tahap</span>
+                        {attempts > 0 && (
+                          <span className="rounded-md bg-[var(--bg-elevated)] px-1.5 py-0.5 text-[var(--text-secondary)]">
+                            {attempts}×
+                          </span>
+                        )}
+                        {bestScore !== null ? (
+                          <span
+                            className={`rounded-md px-2 py-0.5 font-semibold ${
+                              bestScore >= 70
+                                ? 'bg-[var(--accent-success)]/15 text-[var(--accent-success)]'
+                                : 'bg-[var(--accent-amber)]/15 text-[var(--accent-amber)]'
+                            }`}
+                          >
+                            {bestScore}%
+                          </span>
+                        ) : (
+                          <span className="rounded-md bg-[var(--bg-elevated)] px-2 py-0.5 text-[var(--text-muted)]">
+                            Belum kuis
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    <div
+                      className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-[var(--bg-muted)]"
+                      aria-hidden="true"
+                    >
+                      <motion.div
+                        className={`h-full rounded-full ${barColorClass}`}
+                        initial={reduced ? { width: `${barPct}%` } : { width: 0 }}
+                        whileInView={{ width: `${barPct}%` }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={getTransition(reduced, {
+                          duration: 0.4,
+                          ease: [0.22, 1, 0.36, 1],
+                        })}
+                      />
                     </div>
                   </li>
                 );

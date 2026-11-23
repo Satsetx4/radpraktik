@@ -242,21 +242,9 @@ export function Latihan() {
             onSelect={handleSelectOption}
             questionNumber={currentIdx + 1}
             totalQuestions={quizSoal.length}
+            onNext={handleNext}
+            isLast={isLast}
           />
-        )}
-
-        {selectedAnswer !== undefined && (
-          <div className="flex justify-end">
-            <motion.button
-              type="button"
-              whileTap={reduced ? undefined : TAP_FEEDBACK}
-              onClick={handleNext}
-              className="inline-flex min-h-[46px] items-center gap-2 rounded-xl bg-[var(--accent-primary)] px-6 text-sm font-semibold text-[var(--on-accent)]"
-            >
-              <span>{isLast ? 'Lihat Hasil Skor' : 'Soal Berikutnya'}</span>
-              <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </motion.button>
-          </div>
         )}
       </main>
     </div>

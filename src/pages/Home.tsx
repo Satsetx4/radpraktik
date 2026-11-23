@@ -38,7 +38,11 @@ export function Home({ onOpenOnboarding }: HomeProps) {
     scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : null;
 
   const kasusSolvedCount = Object.keys(progress.kasus).length;
-  const featuredKasus = ALL_KASUS.length > 0 ? ALL_KASUS[0] : null;
+  const featuredKasus =
+    ALL_KASUS.find((k) => progress.kasus[k.id] === undefined) ??
+    ALL_KASUS.find((k) => (progress.kasus[k.id] ?? 0) < 100) ??
+    ALL_KASUS[0] ??
+    null;
 
   return (
     <div className="min-h-[100dvh] pb-24 md:pb-12">
@@ -137,7 +141,7 @@ export function Home({ onOpenOnboarding }: HomeProps) {
                   </span>
                 </div>
                 <div className="pt-1">
-                  <span className="inline-block rounded-md border border-cyan-500/30 bg-cyan-500/10 px-2 py-0.5 font-mono text-[11px] text-cyan-300">
+                  <span className="inline-block rounded-md border border-[var(--border-strong)] bg-[var(--accent-primary)]/15 px-2 py-0.5 font-mono text-[11px] text-[var(--accent-secondary)]">
                     {ALL_MODULS.length}/{MODUL_META.length} modul siap
                   </span>
                 </div>
@@ -154,14 +158,20 @@ export function Home({ onOpenOnboarding }: HomeProps) {
             className="clinical-card flex flex-col justify-between rounded-2xl p-5"
           >
             <div>
-              <div className="flex items-center justify-between gap-2">
+              <div className="flex flex-wrap items-center justify-between gap-2">
                 <span className="inline-flex items-center gap-1.5 font-mono text-xs font-medium text-[var(--accent-secondary)]">
                   <Stethoscope className="h-4 w-4" aria-hidden="true" />
-                  KASUS KLINIS ACAK
+                  KASUS KLINIS
                 </span>
-                <span className="font-mono text-xs text-[var(--text-secondary)]">
-                  2 Tahap Tebakan
-                </span>
+                {featuredKasus ? (
+                  <span className="rounded-md border border-[var(--border-strong)] bg-[var(--bg-muted)] px-2 py-0.5 font-mono text-xs font-semibold text-[var(--accent-primary)]">
+                    KASUS {featuredKasus.id.toUpperCase()}
+                  </span>
+                ) : (
+                  <span className="font-mono text-xs text-[var(--text-secondary)]">
+                    2 Tahap Tebakan
+                  </span>
+                )}
               </div>
               {featuredKasus ? (
                 <>
@@ -186,10 +196,15 @@ export function Home({ onOpenOnboarding }: HomeProps) {
             </div>
             <div className="mt-4">
               <Link
-                to="/kasus"
+                to={featuredKasus ? `/kasus?id=${featuredKasus.id}` : '/kasus'}
+                onClick={() =>
+                  trackEvent('cta_click', {
+                    target: featuredKasus ? `kerjakan_kasus_${featuredKasus.id}` : 'buka_kasus',
+                  })
+                }
                 className="inline-flex min-h-[44px] items-center gap-2 text-sm font-semibold text-[var(--accent-primary)] hover:underline"
               >
-                <span>Buka Halaman Kasus</span>
+                <span>{featuredKasus ? 'Kerjakan Kasus Ini' : 'Buka Halaman Kasus'}</span>
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>

@@ -8,7 +8,7 @@ import {
   ShieldAlert,
 } from 'lucide-react';
 import { motion, useReducedMotion } from 'motion/react';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { AppHeader } from '../components/AppHeader';
 import { ImageLightbox } from '../components/ImageLightbox';
@@ -17,10 +17,19 @@ import { SeoHead } from '../components/SeoHead';
 import { StageTabs } from '../components/StageTabs';
 import { getAdjacentModuls, getModulBySlug, getModulMeta, getSoalByModul } from '../data';
 import { REGION_MAP } from '../data/regions';
-import type { TahapId } from '../data/types';
+import type { SoalTipe, TahapId } from '../data/types';
 import { getTransition, TAP_FEEDBACK } from '../lib/motion';
 import { useProgress } from '../lib/progress';
 import { scrollToTopInstant } from '../lib/scroll';
+
+const SOAL_TIPE_META: { tipe: SoalTipe; label: string }[] = [
+  { tipe: 'definisi', label: 'Definisi & Istilah' },
+  { tipe: 'posisi', label: 'Posisi Pasien & Objek' },
+  { tipe: 'sinar', label: 'Central Ray & Eksposi' },
+  { tipe: 'kriteria', label: 'Kriteria Radiograf' },
+  { tipe: 'proteksi', label: 'Proteksi Radiasi' },
+  { tipe: 'prosedur', label: 'Alur Prosedur' },
+];
 
 function parseTahap(raw: string | null): TahapId {
   if (raw === 'proyeksi' || raw === 'proteksi' || raw === 'latihan') return raw;
@@ -39,7 +48,28 @@ export function ModulDetail() {
   const { prev, next } = getAdjacentModuls(slug);
   const { progress, markStageRead } = useProgress();
 
-  const [lightbox, setLightbox] = useState<{ src: string; caption: string } | null>(null);
+  const [lightbox, setLightbox] = useState<{
+    images: { src: string; caption: string }[];
+    index: number;
+  } | null>(null);
+
+  const soalDistribution = useMemo(() => {
+    const counts: Record<SoalTipe, number> = {
+      definisi: 0,
+      posisi: 0,
+      sinar: 0,
+      kriteria: 0,
+      proteksi: 0,
+      prosedur: 0,
+    };
+    for (const s of soalList) {
+      counts[s.tipe] = (counts[s.tipe] ?? 0) + 1;
+    }
+    return SOAL_TIPE_META.map((item) => ({
+      ...item,
+      count: counts[item.tipe],
+    })).filter((item) => item.count > 0);
+  }, [soalList]);
 
   useEffect(() => {
     if (modul && activeTahap !== 'latihan') {
@@ -266,7 +296,7 @@ export function ModulDetail() {
                   key={proy.id}
                   proyeksi={proy}
                   index={idx}
-                  onOpenImage={(src, caption) => setLightbox({ src, caption })}
+                  onOpenImage={(images, index) => setLightbox({ images, index })}
                 />
               ))
             )}
@@ -369,13 +399,75 @@ export function ModulDetail() {
             </p>
 
             {modProgress && modProgress.skorTerbaik !== null && (
-              <div className="mx-auto mt-4 inline-flex gap-4 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-muted)] px-4 py-2.5 text-xs">
-                <span>
-                  Skor terbaik: <strong className="font-mono text-[var(--accent-primary)]">{modProgress.skorTerbaik}%</strong>
-                </span>
-                <span>
-                  Percobaan: <strong className="font-mono">{modProgress.percobaan}×</strong>
-                </span>
+              <div className="mx-auto mt-5 max-w-md space-y-3 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-muted)]/70 p-4 text-left">
+                <div className="grid grid-cols-3 gap-2 text-center">
+                  <div className="rounded-lg bg-[var(--bg-elevated)] px-2.5 py-2">
+                    <span className="block text-[11px] text-[var(--text-secondary)]">Skor Terbaik</span>
+                    <strong
+                      className={`mt-0.5 block font-mono text-base ${
+                        modProgress.skorTerbaik >= 70
+                          ? 'text-[var(--accent-success)]'
+                          : 'text-[var(--accent-amber)]'
+                      }`}
+                    >
+                      {modProgress.skorTerbaik}%
+                    </strong>
+                  </div>
+                  <div className="rounded-lg bg-[var(--bg-elevated)] px-2.5 py-2">
+                    <span className="block text-[11px] text-[var(--text-secondary)]">Skor Terakhir</span>
+                    <strong className="mt-0.5 block font-mono text-base text-[var(--text-primary)]">
+                      {modProgress.skorTerakhir !== null ? `${modProgress.skorTerakhir}%` : '—'}
+                    </strong>
+                  </div>
+                  <div className="rounded-lg bg-[var(--bg-elevated)] px-2.5 py-2">
+                    <span className="block text-[11px] text-[var(--text-secondary)]">Percobaan</span>
+                    <strong className="mt-0.5 block font-mono text-base text-[var(--text-primary)]">
+                      {modProgress.percobaan}×
+                    </strong>
+                  </div>
+                </div>
+                <div className="space-y-1">
+                  <div className="flex items-center justify-between text-[11px] text-[var(--text-secondary)]">
+                    <span>Capaian Terbaik</span>
+                    <span className="font-mono">{modProgress.skorTerbaik}%</span>
+                  </div>
+                  <div
+                    className="h-1.5 w-full overflow-hidden rounded-full bg-[var(--bg-elevated)]"
+                    aria-hidden="true"
+                  >
+                    <div
+                      className={`h-full rounded-full transition-all duration-300 ${
+                        modProgress.skorTerbaik >= 70
+                          ? 'bg-[var(--accent-success)]'
+                          : 'bg-[var(--accent-amber)]'
+                      }`}
+                      style={{ width: `${Math.min(100, modProgress.skorTerbaik)}%` }}
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {soalDistribution.length > 0 && (
+              <div className="mx-auto mt-5 max-w-xl text-left">
+                <h3 className="font-display text-xs font-semibold uppercase tracking-wider text-[var(--text-secondary)]">
+                  Kisi-kisi {soalList.length} Soal Modul
+                </h3>
+                <div className="mt-2.5 grid grid-cols-2 gap-2 sm:grid-cols-3">
+                  {soalDistribution.map((item) => (
+                    <div
+                      key={item.tipe}
+                      className="flex items-center justify-between gap-2 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-muted)]/50 px-3 py-2 text-xs"
+                    >
+                      <span className="truncate font-medium text-[var(--text-primary)]">
+                        {item.label}
+                      </span>
+                      <span className="shrink-0 rounded-md bg-[var(--bg-elevated)] px-1.5 py-0.5 font-mono text-[11px] font-semibold text-[var(--accent-primary)]">
+                        {item.count}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
 
@@ -430,8 +522,9 @@ export function ModulDetail() {
       </main>
 
       <ImageLightbox
-        src={lightbox?.src ?? null}
-        caption={lightbox?.caption}
+        images={lightbox?.images ?? []}
+        initialIndex={lightbox?.index ?? 0}
+        open={lightbox !== null}
         onClose={() => setLightbox(null)}
       />
     </div>

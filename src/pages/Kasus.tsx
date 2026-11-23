@@ -2,20 +2,21 @@ import {
   ArrowRight,
   BookOpen,
   CheckCircle2,
+  LayoutGrid,
   RotateCcw,
   ShieldAlert,
   Shuffle,
   Stethoscope,
   XCircle,
 } from 'lucide-react';
-import { motion, useReducedMotion } from 'motion/react';
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { AppHeader } from '../components/AppHeader';
 import { SeoHead } from '../components/SeoHead';
 import { ALL_KASUS, getModulMeta } from '../data';
 import type { Kasus as KasusType } from '../data/types';
-import { getTransition, TAP_FEEDBACK } from '../lib/motion';
+import { getTransition, SNAPPY_TRANSITION, TAP_FEEDBACK } from '../lib/motion';
 import { useProgress } from '../lib/progress';
 import { scrollToTopInstant } from '../lib/scroll';
 import { shuffleArray, shuffleKasusTahap } from '../lib/shuffle';
@@ -32,15 +33,53 @@ function prepareCaseDeck(list: KasusType[]): KasusType[] {
 }
 
 export function Kasus() {
-  const { progress, recordCaseScore } = useProgress();
+  const { progress, recordCaseScore, setActiveCase } = useProgress();
+  const [searchParams, setSearchParams] = useSearchParams();
   const reduced = useReducedMotion();
 
-  const [deck, setDeck] = useState<KasusType[]>(() => prepareCaseDeck(ALL_KASUS));
-  const [idx, setIdx] = useState(0);
-  const [ans1, setAns1] = useState<number | null>(null);
-  const [ans2, setAns2] = useState<number | null>(null);
+  const savedActive =
+    ALL_KASUS.length > 0 && progress.kasusAktif && progress.kasusAktif.deck.length > 0
+      ? progress.kasusAktif
+      : null;
 
+  const [deck, setDeck] = useState<KasusType[]>(() =>
+    savedActive ? savedActive.deck : prepareCaseDeck(ALL_KASUS),
+  );
+  const [idx, setIdx] = useState<number>(() => {
+    if (!savedActive) return 0;
+    const raw = typeof savedActive.index === 'number' ? savedActive.index : 0;
+    return Math.max(0, Math.min(savedActive.deck.length - 1, raw));
+  });
+  const [ans1, setAns1] = useState<number | null>(() =>
+    savedActive && typeof savedActive.ans1 === 'number' ? savedActive.ans1 : null,
+  );
+  const [ans2, setAns2] = useState<number | null>(() =>
+    savedActive && typeof savedActive.ans2 === 'number' ? savedActive.ans2 : null,
+  );
+  const [isPickerOpen, setIsPickerOpen] = useState(false);
+
+  const idParam = searchParams.get('id');
   const currentCase = deck[idx];
+
+  useEffect(() => {
+    if (ALL_KASUS.length === 0 || deck.length === 0) return;
+
+    if (idParam) {
+      const foundIdx = deck.findIndex((k) => k.id.toLowerCase() === idParam.toLowerCase());
+      if (foundIdx !== -1) {
+        setIdx(foundIdx);
+        setAns1(null);
+        setAns2(null);
+        setActiveCase({ deck, index: foundIdx, ans1: null, ans2: null });
+        setSearchParams({}, { replace: true });
+        return;
+      }
+    }
+
+    if (!progress.kasusAktif || progress.kasusAktif.deck.length === 0) {
+      setActiveCase({ deck, index: idx, ans1, ans2 });
+    }
+  }, [idParam, deck, idx, ans1, ans2, progress.kasusAktif, setActiveCase, setSearchParams]);
 
   useEffect(() => {
     if (currentCase) {
@@ -49,21 +88,41 @@ export function Kasus() {
   }, [currentCase]);
 
   const reshuffleAll = useCallback(() => {
-    setDeck(prepareCaseDeck(ALL_KASUS));
+    const newDeck = prepareCaseDeck(ALL_KASUS);
+    setDeck(newDeck);
     setIdx(0);
     setAns1(null);
     setAns2(null);
+    setActiveCase({ deck: newDeck, index: 0, ans1: null, ans2: null });
     scrollToTopInstant();
-  }, []);
+  }, [setActiveCase]);
+
+  const handleJumpToCase = useCallback(
+    (caseId: string) => {
+      const targetIdx = deck.findIndex((k) => k.id === caseId);
+      if (targetIdx === -1) return;
+      setIdx(targetIdx);
+      setAns1(null);
+      setAns2(null);
+      setActiveCase({ deck, index: targetIdx, ans1: null, ans2: null });
+      setIsPickerOpen(false);
+      scrollToTopInstant();
+    },
+    [deck, setActiveCase],
+  );
 
   const handleNextCase = () => {
     setAns1(null);
     setAns2(null);
     if (idx + 1 < deck.length) {
-      setIdx((i) => i + 1);
+      const nextIdx = idx + 1;
+      setIdx(nextIdx);
+      setActiveCase({ deck, index: nextIdx, ans1: null, ans2: null });
     } else {
-      setDeck(prepareCaseDeck(ALL_KASUS));
+      const newDeck = prepareCaseDeck(ALL_KASUS);
+      setDeck(newDeck);
       setIdx(0);
+      setActiveCase({ deck: newDeck, index: 0, ans1: null, ans2: null });
     }
     scrollToTopInstant();
   };
@@ -71,17 +130,24 @@ export function Kasus() {
   const handleSelectTahap1 = (optIdx: number) => {
     if (ans1 !== null) return;
     setAns1(optIdx);
+    setActiveCase({ deck, index: idx, ans1: optIdx, ans2 });
   };
 
   const handleSelectTahap2 = (optIdx: number) => {
     if (!currentCase || ans1 === null || ans2 !== null) return;
     setAns2(optIdx);
+    setActiveCase({ deck, index: idx, ans1, ans2: optIdx });
     const s1 = ans1 === currentCase.tahap1.kunci ? 1 : 0;
     const s2 = optIdx === currentCase.tahap2.kunci ? 1 : 0;
     const skor = (s1 + s2) * 50;
     recordCaseScore(currentCase.id, skor);
     trackEvent('jawab_kasus', { id: currentCase.id, skor });
   };
+
+  const nextUnanswered = useMemo(
+    () => ALL_KASUS.find((k) => progress.kasus[k.id] === undefined),
+    [progress.kasus],
+  );
 
   const earnedScore = useMemo(() => {
     if (!currentCase || ans1 === null || ans2 === null) return null;
@@ -170,15 +236,130 @@ export function Kasus() {
               );
             })}
           </div>
-          <button
-            type="button"
-            onClick={reshuffleAll}
-            className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-[var(--border-subtle)] px-3 text-xs font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
-          >
-            <Shuffle className="h-3.5 w-3.5" aria-hidden="true" />
-            <span>Acak Ulang ({Object.keys(progress.kasus).length}/{ALL_KASUS.length})</span>
-          </button>
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              type="button"
+              aria-expanded={isPickerOpen}
+              onClick={() => setIsPickerOpen((prev) => !prev)}
+              className={`inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border px-3 text-xs font-medium transition-colors ${
+                isPickerOpen
+                  ? 'border-[var(--border-strong)] bg-[var(--accent-primary)]/15 text-[var(--accent-primary)]'
+                  : 'border-[var(--border-subtle)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] hover:text-[var(--text-primary)]'
+              }`}
+            >
+              <LayoutGrid className="h-3.5 w-3.5" aria-hidden="true" />
+              <span>
+                Pilih Kasus ({Object.keys(progress.kasus).length}/{ALL_KASUS.length})
+              </span>
+            </button>
+            <button
+              type="button"
+              onClick={reshuffleAll}
+              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-[var(--border-subtle)] px-3 text-xs font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
+            >
+              <Shuffle className="h-3.5 w-3.5" aria-hidden="true" />
+              <span>Acak Ulang</span>
+            </button>
+          </div>
         </div>
+
+        <AnimatePresence initial={false}>
+          {isPickerOpen && (
+            <motion.section
+              key="case-picker"
+              initial={reduced ? { opacity: 1 } : { opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={reduced ? { opacity: 0 } : { opacity: 0, y: -8 }}
+              transition={getTransition(reduced, SNAPPY_TRANSITION)}
+              aria-label="Pemilih nomor kasus"
+              className="clinical-card space-y-4 rounded-2xl p-4 sm:p-5"
+            >
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div className="flex flex-wrap items-center gap-3 text-xs text-[var(--text-secondary)]">
+                  <span className="inline-flex items-center gap-1.5">
+                    <span
+                      className="h-2.5 w-2.5 rounded-full bg-[var(--accent-success)]"
+                      aria-hidden="true"
+                    />
+                    100%
+                  </span>
+                  <span className="inline-flex items-center gap-1.5">
+                    <span
+                      className="h-2.5 w-2.5 rounded-full bg-[var(--accent-amber)]"
+                      aria-hidden="true"
+                    />
+                    50%
+                  </span>
+                  <span className="inline-flex items-center gap-1.5">
+                    <span
+                      className="h-2.5 w-2.5 rounded-full bg-[var(--accent-danger)]"
+                      aria-hidden="true"
+                    />
+                    0%
+                  </span>
+                  <span className="inline-flex items-center gap-1.5">
+                    <span
+                      className="h-2.5 w-2.5 rounded-full border border-[var(--border-strong)] bg-[var(--bg-muted)]"
+                      aria-hidden="true"
+                    />
+                    Belum dijawab
+                  </span>
+                </div>
+
+                {nextUnanswered && (
+                  <button
+                    type="button"
+                    onClick={() => handleJumpToCase(nextUnanswered.id)}
+                    className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl bg-[var(--accent-primary)] px-3.5 text-xs font-semibold text-[var(--on-accent)] transition-opacity hover:opacity-95"
+                  >
+                    <span>Lompat ke Belum Dijawab</span>
+                    <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+                  </button>
+                )}
+              </div>
+
+              <div className="grid grid-cols-5 gap-2 sm:grid-cols-6 md:grid-cols-10">
+                {ALL_KASUS.map((k) => {
+                  const score = progress.kasus[k.id];
+                  const isActive = currentCase.id === k.id;
+
+                  let toneCls =
+                    'border-[var(--border-subtle)] bg-[var(--bg-muted)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] hover:text-[var(--text-primary)]';
+                  if (score === 100) {
+                    toneCls =
+                      'border-[var(--accent-success)] bg-[var(--accent-success)]/15 text-[var(--accent-success)]';
+                  } else if (score === 50) {
+                    toneCls =
+                      'border-[var(--accent-amber)] bg-[var(--accent-amber)]/15 text-[var(--accent-amber)]';
+                  } else if (score === 0) {
+                    toneCls =
+                      'border-[var(--accent-danger)] bg-[var(--accent-danger)]/15 text-[var(--accent-danger)]';
+                  }
+
+                  const activeCls = isActive
+                    ? 'ring-2 ring-[var(--accent-primary)] ring-offset-2 ring-offset-[var(--bg-surface)] font-bold'
+                    : 'font-medium';
+
+                  return (
+                    <motion.button
+                      key={k.id}
+                      type="button"
+                      whileTap={reduced ? undefined : TAP_FEEDBACK}
+                      aria-current={isActive ? 'true' : undefined}
+                      aria-label={`Kasus ${k.id.toUpperCase()}${
+                        score !== undefined ? `, skor ${score}%` : ', belum dijawab'
+                      }`}
+                      onClick={() => handleJumpToCase(k.id)}
+                      className={`flex min-h-[44px] items-center justify-center rounded-xl border font-mono text-xs transition-colors ${toneCls} ${activeCls}`}
+                    >
+                      {k.id.toUpperCase()}
+                    </motion.button>
+                  );
+                })}
+              </div>
+            </motion.section>
+          )}
+        </AnimatePresence>
 
         {/* Skenario */}
         <section className="clinical-card rounded-2xl p-5">

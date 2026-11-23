@@ -1,4 +1,4 @@
-import { CheckCircle2, XCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle2, XCircle } from 'lucide-react';
 import { motion, useReducedMotion } from 'motion/react';
 import type { Soal } from '../data/types';
 import { getTransition, TAP_FEEDBACK } from '../lib/motion';
@@ -20,6 +20,8 @@ interface QuizQuestionProps {
   onSelect: (index: number) => void;
   questionNumber: number;
   totalQuestions: number;
+  onNext?: () => void;
+  isLast?: boolean;
 }
 
 export function QuizQuestion({
@@ -28,6 +30,8 @@ export function QuizQuestion({
   onSelect,
   questionNumber,
   totalQuestions,
+  onNext,
+  isLast = false,
 }: QuizQuestionProps) {
   const reduced = useReducedMotion();
   const isAnswered = selectedIndex !== undefined;
@@ -128,6 +132,19 @@ export function QuizQuestion({
           <p className="mt-1.5 text-sm leading-relaxed text-[var(--text-primary)]">
             {soal.penjelasan}
           </p>
+          {onNext && (
+            <div className="mt-4 flex justify-end">
+              <motion.button
+                type="button"
+                whileTap={reduced ? undefined : TAP_FEEDBACK}
+                onClick={onNext}
+                className="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-xl bg-[var(--accent-primary)] px-5 text-sm font-semibold text-[var(--on-accent)] sm:w-auto"
+              >
+                <span>{isLast ? 'Lihat Hasil Skor' : 'Soal Berikutnya'}</span>
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </motion.button>
+            </div>
+          )}
         </motion.div>
       )}
     </div>

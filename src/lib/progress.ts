@@ -1,5 +1,5 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
-import type { Soal, TahapId } from '../data/types';
+import type { Kasus, Soal, TahapId } from '../data/types';
 import { storage, type SafeStorage } from './storage';
 import { trackEvent } from './track';
 
@@ -20,6 +20,13 @@ export interface ActiveQuizState {
   startedAt: number;
 }
 
+export interface ActiveCaseState {
+  deck: Kasus[];
+  index: number;
+  ans1: number | null;
+  ans2: number | null;
+}
+
 export interface ProgressState {
   nama: string;
   tema: ThemeMode;
@@ -28,6 +35,7 @@ export interface ProgressState {
   modul: Record<string, ModulProgress>;
   kasus: Record<string, number>;
   kuisAktif?: ActiveQuizState | null;
+  kasusAktif?: ActiveCaseState | null;
 }
 
 export const PROGRESS_STORAGE_KEY = 'progress';
@@ -42,6 +50,7 @@ export function createDefaultProgress(tema: ThemeMode = 'light'): ProgressState 
     modul: {},
     kasus: {},
     kuisAktif: null,
+    kasusAktif: null,
   };
 }
 
@@ -68,6 +77,12 @@ export function loadProgress(store: SafeStorage = storage): ProgressState {
     modul: parsed.modul && typeof parsed.modul === 'object' ? parsed.modul : {},
     kasus: parsed.kasus && typeof parsed.kasus === 'object' ? parsed.kasus : {},
     kuisAktif: parsed.kuisAktif ?? null,
+    kasusAktif:
+      parsed.kasusAktif &&
+      typeof parsed.kasusAktif === 'object' &&
+      Array.isArray(parsed.kasusAktif.deck)
+        ? parsed.kasusAktif
+        : null,
   };
 }
 
@@ -187,6 +202,7 @@ export interface ProgressContextValue {
   recordQuizScore: (slug: string, skor: number) => void;
   setActiveQuiz: (quiz: ActiveQuizState | null) => void;
   recordCaseScore: (kasusId: string, skor: number) => void;
+  setActiveCase: (kasusAktif: ActiveCaseState | null) => void;
   resetAll: () => void;
 }
 
@@ -232,6 +248,10 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     setProgress((prev) => applyCaseResult(prev, kasusId, skor));
   }, []);
 
+  const setActiveCase = useCallback((kasusAktif: ActiveCaseState | null) => {
+    setProgress((prev) => ({ ...prev, kasusAktif }));
+  }, []);
+
   const resetAll = useCallback(() => {
     const fresh = resetProgressStorage();
     setProgress(fresh);
@@ -249,6 +269,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       recordQuizScore,
       setActiveQuiz,
       recordCaseScore,
+      setActiveCase,
       resetAll,
     }),
     [
@@ -260,6 +281,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       recordQuizScore,
       setActiveQuiz,
       recordCaseScore,
+      setActiveCase,
       resetAll,
     ],
   );

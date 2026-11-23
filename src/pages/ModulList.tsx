@@ -64,12 +64,16 @@ export function ModulList() {
             />
           </div>
 
-          <div className="flex flex-wrap gap-2" role="group" aria-label="Filter region">
+          <div
+            className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1.5 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            role="group"
+            aria-label="Filter region"
+          >
             <motion.button
               type="button"
               whileTap={reduced ? undefined : TAP_FEEDBACK}
               onClick={() => setSelectedRegion('all')}
-              className={`min-h-[44px] rounded-xl border px-3.5 text-xs font-medium transition-colors ${
+              className={`min-h-[44px] shrink-0 rounded-xl border px-3.5 text-xs font-medium transition-colors ${
                 selectedRegion === 'all'
                   ? 'border-[var(--accent-primary)] bg-[var(--accent-primary)]/15 text-[var(--accent-primary)]'
                   : 'border-[var(--border-subtle)] bg-[var(--bg-elevated)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
@@ -83,7 +87,7 @@ export function ModulList() {
                 type="button"
                 whileTap={reduced ? undefined : TAP_FEEDBACK}
                 onClick={() => setSelectedRegion(region.id)}
-                className={`min-h-[44px] rounded-xl border px-3.5 text-xs font-medium transition-colors ${
+                className={`min-h-[44px] shrink-0 rounded-xl border px-3.5 text-xs font-medium transition-colors ${
                   selectedRegion === region.id
                     ? 'border-[var(--accent-primary)] bg-[var(--accent-primary)]/15 text-[var(--accent-primary)]'
                     : 'border-[var(--border-subtle)] bg-[var(--bg-elevated)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
@@ -133,7 +137,7 @@ export function ModulList() {
             </button>
           </div>
         ) : (
-          <div className="space-y-8">
+          <div key={`${selectedRegion}-${query}`} className="space-y-8">
             {filteredRegions.map(({ region, items }) => (
               <section key={region.id} className="space-y-3">
                 <div className="flex items-baseline justify-between gap-2">
@@ -143,23 +147,30 @@ export function ModulList() {
                     </h2>
                     <p className="text-xs text-[var(--text-secondary)]">{region.deskripsi}</p>
                   </div>
-                  <span className="font-mono text-xs text-[var(--text-secondary)]">
+                  <span className="shrink-0 whitespace-nowrap font-mono text-xs text-[var(--text-secondary)]">
                     {items.length} modul
                   </span>
                 </div>
 
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {items.map((meta) => {
+                  {items.map((meta, idx) => {
                     const loaded = MODUL_BY_SLUG[meta.slug];
                     const modProg = progress.modul[meta.slug];
                     const readCount = modProg?.dibaca.length ?? 0;
+                    const readPct = Math.min(100, Math.round((readCount / 4) * 100));
                     const bestScore = modProg?.skorTerbaik ?? null;
 
                     return (
                       <motion.div
                         key={meta.slug}
+                        initial={reduced ? { opacity: 1 } : { opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
                         whileHover={reduced ? undefined : HOVER_ELEVATE}
-                        transition={getTransition(reduced)}
+                        transition={getTransition(reduced, {
+                          duration: 0.18,
+                          delay: Math.min(idx * 0.02, 0.14),
+                          ease: [0.22, 1, 0.36, 1],
+                        })}
                       >
                         <Link
                           to={`/modul/${meta.slug}`}
@@ -193,9 +204,20 @@ export function ModulList() {
                             </h3>
                           </div>
 
-                          <div className="mt-4 flex items-center justify-between border-t border-[var(--border-subtle)] pt-2.5 text-xs text-[var(--text-secondary)]">
-                            <span>{readCount}/4 tahap dibaca</span>
-                            <span className="font-medium text-[var(--accent-primary)]">Buka →</span>
+                          <div className="mt-4 space-y-2 border-t border-[var(--border-subtle)] pt-2.5">
+                            <div
+                              className="h-1.5 w-full overflow-hidden rounded-full bg-[var(--bg-muted)]"
+                              aria-hidden="true"
+                            >
+                              <div
+                                className="h-full rounded-full bg-[var(--accent-primary)] transition-all duration-300"
+                                style={{ width: `${readPct}%` }}
+                              />
+                            </div>
+                            <div className="flex items-center justify-between text-xs text-[var(--text-secondary)]">
+                              <span>{readCount}/4 tahap dibaca</span>
+                              <span className="font-medium text-[var(--accent-primary)]">Buka →</span>
+                            </div>
                           </div>
                         </Link>
                       </motion.div>

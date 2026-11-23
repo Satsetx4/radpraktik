@@ -1,38 +1,75 @@
-import { X, ZoomIn, ZoomOut } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from 'lucide-react';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { getTransition, TAP_FEEDBACK } from '../lib/motion';
 
 interface ImageLightboxProps {
-  src: string | null;
-  caption?: string;
+  images: { src: string; caption: string }[];
+  initialIndex?: number;
+  open: boolean;
   onClose: () => void;
 }
 
-export function ImageLightbox({ src, caption, onClose }: ImageLightboxProps) {
+export function ImageLightbox({
+  images,
+  initialIndex = 0,
+  open,
+  onClose,
+}: ImageLightboxProps) {
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [zoomed, setZoomed] = useState(false);
   const reduced = useReducedMotion();
 
   useEffect(() => {
-    setZoomed(false);
-  }, [src]);
+    if (!open) return;
+    const clamped =
+      images.length > 0 ? Math.max(0, Math.min(initialIndex, images.length - 1)) : 0;
+    setCurrentIndex(clamped);
+  }, [open, images, initialIndex]);
 
   useEffect(() => {
-    if (!src) return;
+    setZoomed(false);
+  }, [currentIndex, open]);
+
+  const hasMultiple = images.length > 1;
+  const safeIndex =
+    images.length > 0 ? Math.max(0, Math.min(currentIndex, images.length - 1)) : 0;
+  const currentImage = open && images.length > 0 ? images[safeIndex] : null;
+
+  const handlePrev = useCallback(() => {
+    if (images.length <= 1) return;
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  }, [images.length]);
+
+  const handleNext = useCallback(() => {
+    if (images.length <= 1) return;
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  }, [images.length]);
+
+  useEffect(() => {
+    if (!open || images.length === 0) return;
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === 'Escape') {
+        onClose();
+      } else if (e.key === 'ArrowLeft' && images.length > 1) {
+        e.preventDefault();
+        handlePrev();
+      } else if (e.key === 'ArrowRight' && images.length > 1) {
+        e.preventDefault();
+        handleNext();
+      }
     };
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, [src, onClose]);
+  }, [open, images.length, onClose, handlePrev, handleNext]);
 
   return (
     <AnimatePresence>
-      {src && (
+      {currentImage && (
         <motion.div
           role="dialog"
           aria-modal="true"
-          aria-label={caption || 'Pratinjau gambar proyeksi'}
+          aria-label={currentImage.caption || 'Pratinjau gambar proyeksi'}
           initial={reduced ? { opacity: 1 } : { opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={reduced ? { opacity: 0 } : { opacity: 0 }}
@@ -49,9 +86,16 @@ export function ImageLightbox({ src, caption, onClose }: ImageLightboxProps) {
             className="negatoscope-frame relative flex max-h-[90dvh] w-full max-w-3xl flex-col overflow-hidden rounded-2xl"
           >
             <div className="flex items-center justify-between gap-2 border-b border-white/10 px-4 py-2.5">
-              <p className="truncate text-sm font-medium text-slate-100">
-                {caption || 'Gambar Proyeksi'}
-              </p>
+              <div className="flex min-w-0 items-center gap-2.5">
+                {hasMultiple && (
+                  <span className="shrink-0 rounded-md border border-white/15 bg-white/10 px-2 py-0.5 font-mono text-xs text-slate-200">
+                    {safeIndex + 1} / {images.length}
+                  </span>
+                )}
+                <p className="truncate text-sm font-medium text-slate-100">
+                  {currentImage.caption || 'Gambar Proyeksi'}
+                </p>
+              </div>
               <div className="flex shrink-0 items-center gap-2">
                 <motion.button
                   type="button"
@@ -74,16 +118,44 @@ export function ImageLightbox({ src, caption, onClose }: ImageLightboxProps) {
               </div>
             </div>
 
-            <div className="flex flex-1 items-center justify-center overflow-auto bg-[#05080C] p-4">
+            <div className="relative flex flex-1 items-center justify-center overflow-auto bg-[var(--bg-negatoscope)] p-4">
               <img
-                src={src}
-                alt={caption || 'Ilustrasi proyeksi radiografi'}
+                src={currentImage.src}
+                alt={currentImage.caption || 'Ilustrasi proyeksi radiografi'}
                 onClick={() => setZoomed((z) => !z)}
-                className={`max-h-[72dvh] w-auto cursor-zoom-in rounded-lg object-contain transition-transform duration-200 ${
+                className={`max-h-[68dvh] w-auto cursor-zoom-in rounded-lg object-contain transition-transform duration-200 ${
                   zoomed ? 'scale-150 cursor-zoom-out' : 'scale-100'
                 }`}
               />
             </div>
+
+            {hasMultiple && (
+              <div className="flex items-center justify-between gap-3 border-t border-white/10 px-4 py-2.5">
+                <motion.button
+                  type="button"
+                  whileTap={reduced ? undefined : TAP_FEEDBACK}
+                  onClick={handlePrev}
+                  aria-label="Gambar sebelumnya"
+                  className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center gap-1.5 rounded-xl border border-white/15 bg-white/5 px-3 text-xs font-medium text-slate-100 hover:bg-white/10"
+                >
+                  <ChevronLeft className="h-4 w-4" aria-hidden="true" />
+                  <span>Sebelumnya</span>
+                </motion.button>
+                <span className="font-mono text-xs text-slate-300">
+                  {safeIndex + 1} / {images.length}
+                </span>
+                <motion.button
+                  type="button"
+                  whileTap={reduced ? undefined : TAP_FEEDBACK}
+                  onClick={handleNext}
+                  aria-label="Gambar berikutnya"
+                  className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center gap-1.5 rounded-xl border border-white/15 bg-white/5 px-3 text-xs font-medium text-slate-100 hover:bg-white/10"
+                >
+                  <span>Berikutnya</span>
+                  <ChevronRight className="h-4 w-4" aria-hidden="true" />
+                </motion.button>
+              </div>
+            )}
           </motion.div>
         </motion.div>
       )}

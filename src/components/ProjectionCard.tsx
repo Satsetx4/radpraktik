@@ -7,7 +7,7 @@ import { getTransition, HOVER_ELEVATE } from '../lib/motion';
 interface ProjectionCardProps {
   proyeksi: Proyeksi;
   index: number;
-  onOpenImage: (src: string, caption: string) => void;
+  onOpenImage: (images: { src: string; caption: string }[], index: number) => void;
 }
 
 export function ProjectionCard({ proyeksi, index, onOpenImage }: ProjectionCardProps) {
@@ -66,7 +66,7 @@ export function ProjectionCard({ proyeksi, index, onOpenImage }: ProjectionCardP
       {/* Negatoscope Image Frame */}
       {proyeksi.gambar.length > 0 && (
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
-          {proyeksi.gambar.map((img) => {
+          {proyeksi.gambar.map((img, imgIdx) => {
             const isFailed = failedImgs[img.src];
             return (
               <div
@@ -81,7 +81,7 @@ export function ProjectionCard({ proyeksi, index, onOpenImage }: ProjectionCardP
                 ) : (
                   <button
                     type="button"
-                    onClick={() => onOpenImage(img.src, img.caption)}
+                    onClick={() => onOpenImage(proyeksi.gambar, imgIdx)}
                     className="relative block w-full overflow-hidden rounded-lg text-left focus-visible:outline-2 focus-visible:outline-[var(--accent-primary)]"
                     aria-label={`Perbesar gambar ${img.caption}`}
                   >
@@ -99,7 +99,7 @@ export function ProjectionCard({ proyeksi, index, onOpenImage }: ProjectionCardP
                     </span>
                   </button>
                 )}
-                <p className="mt-2 truncate px-1 text-xs text-slate-300">
+                <p className="mt-2 line-clamp-2 px-1 text-xs leading-snug text-slate-300">
                   {img.caption}
                 </p>
               </div>

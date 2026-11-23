@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import type { Kasus } from '../data/types';
 import {
   applyCaseResult,
   applyQuizCompletion,
@@ -7,6 +8,7 @@ import {
   loadProgress,
   resetProgressStorage,
   saveProgress,
+  type ActiveCaseState,
 } from './progress';
 import { createSafeStorage, type StorageBackend } from './storage';
 
@@ -75,5 +77,40 @@ describe('progress state & persistence', () => {
     expect(reset.modul).toEqual({});
     expect(reset.kasus).toEqual({});
     expect(loadProgress(safe)).toEqual(createDefaultProgress('light'));
+  });
+
+  it('menyimpan, memuat ulang, dan membersihkan kasusAktif saat reset', () => {
+    const safe = makeMemoryStorage();
+    const sampleKasus: Kasus = {
+      id: 'k01',
+      modulTerkait: ['manus'],
+      skenario: 'Pasien trauma tangan.',
+      tahap1: { tanya: 'Proyeksi?', pilihan: ['PA', 'AP'], kunci: 0 },
+      tahap2: { tanya: 'CR?', pilihan: ['Tegak lurus', '15 deg'], kunci: 0 },
+      pembahasan: {
+        proyeksi: 'PA',
+        posisi: 'Duduk',
+        centralRay: 'Tegak lurus MCP 3',
+        proteksi: 'Apron',
+      },
+      sumber: 'Modul Manus',
+    };
+    const kasusAktif: ActiveCaseState = {
+      deck: [sampleKasus],
+      index: 0,
+      ans1: 0,
+      ans2: null,
+    };
+
+    const state = createDefaultProgress('light');
+    state.kasusAktif = kasusAktif;
+    saveProgress(state, safe);
+
+    const loaded = loadProgress(safe);
+    expect(loaded.kasusAktif).toEqual(kasusAktif);
+
+    const reset = resetProgressStorage(safe);
+    expect(reset.kasusAktif).toBeNull();
+    expect(loadProgress(safe).kasusAktif).toBeNull();
   });
 });
