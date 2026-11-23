@@ -43,7 +43,7 @@ export function StageTabs({ active, completed = [], onChange }: StageTabsProps) 
             onClick={() => onChange(tab.id)}
             whileTap={reduced ? undefined : TAP_FEEDBACK}
             transition={getTransition(reduced)}
-            className={`relative flex min-h-[44px] items-center justify-center gap-1.5 rounded-xl px-2 py-2 text-xs font-medium transition-colors sm:text-sm ${
+            className={`relative flex min-h-[44px] items-center justify-center gap-1.5 rounded-xl px-1 pt-3 pb-1.5 text-[11px] font-medium transition-colors sm:px-2 sm:py-2 sm:text-sm ${
               isActive
                 ? 'text-[var(--text-primary)]'
                 : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
@@ -56,16 +56,16 @@ export function StageTabs({ active, completed = [], onChange }: StageTabsProps) 
                 className="absolute inset-0 rounded-xl border border-[var(--border-strong)] bg-[var(--bg-muted)]"
               />
             )}
-            <span className="relative z-10 flex items-center gap-1 truncate">
+            <span className="relative z-10 flex items-center justify-center leading-tight">
               <span className="sm:hidden">{tab.shortLabel}</span>
               <span className="hidden sm:inline">{tab.label}</span>
-              {isDone && (
-                <CheckCircle2
-                  className="h-3.5 w-3.5 shrink-0 text-[var(--accent-secondary)]"
-                  aria-label="Sudah dibaca"
-                />
-              )}
             </span>
+            {isDone && (
+              <CheckCircle2
+                className="pointer-events-none absolute right-1 top-1 z-10 h-3 w-3 shrink-0 text-[var(--accent-secondary)] sm:static sm:h-3.5 sm:w-3.5"
+                aria-label="Sudah dibaca"
+              />
+            )}
           </motion.button>
         );
       })}

@@ -113,7 +113,7 @@ export function OnboardingModal({
                     setNama(e.target.value);
                     if (error) setError('');
                   }}
-                  placeholder="Contoh: Rina"
+                  placeholder="Contoh: Rindia"
                   maxLength={35}
                   autoFocus
                   aria-invalid={Boolean(error)}
